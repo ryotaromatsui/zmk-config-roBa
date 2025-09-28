@@ -81,7 +81,7 @@
             bindings = <
 &kp Q             &kp W         &kp E         &kp R                        &kp T                                                                &kp Y                   &kp U  &lt 1 I   &kp O      &kp P
 &kp A             &kp S         &kp D         &kp F                        &kp G             &kp LS(LG(S))                      &kp MINUS       &kp H                   &kp J  &kp K     &kp L      &kp BACKSPACE
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                        &kp B             &kp LG(SPACE)                      &kp SEMICOLON   &kp N                   &kp M  &kp LEFT  &kp RIGHT  &kp KP_ENTER
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                        &kp B             &kp SPACE                          &kp SEMICOLON   &kp N                   &kp M  &kp LEFT  &kp RIGHT  &kp KP_ENTER
 &kp LEFT_WIN      &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 1 INT_HENKAN  &lt 1 LANGUAGE_2  &lt_to_layer_0 2 INT_MUHENKAN      &lt 1 INT_KANA  &lt 2 LS(RG(KP_ENTER))                              &kp DEL
             >;
 
@@ -105,6 +105,15 @@
 &kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))      &kp UNDERSCORE  &kp EXCLAMATION   &kp AT_SIGN        &kp HASH        &kp DOLLAR            &kp PERCENT
 &mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL                    &trans          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp BACKSLASH
 &trans                      &trans           &trans           &trans           &trans        &trans                       &trans          &trans                                                                     &kp PIPE
+            >;
+        };
+
+        layer_4 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
         };
 
