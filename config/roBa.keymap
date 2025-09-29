@@ -108,6 +108,15 @@
             >;
         };
 
+        layer_4 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+            >;
+        };
+
         MOUSE {
             bindings = <
 &none   &trans  &trans  &kp LG(LEFT_ARROW)      &kp LG(RIGHT_ARROW)                      &trans  &trans    &trans    &trans    &trans
