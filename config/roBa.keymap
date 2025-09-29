@@ -79,10 +79,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R                        &kp T                                                                  &kp Y           &kp U  &lt 1 I   &kp O      &kp P
-&kp A             &kp S         &kp D         &kp F                        &kp G             &none                              &kp MINUS         &kp H           &kp J  &kp K     &kp L      &kp BACKSPACE
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                        &kp B             &none                              &kp SEMICOLON     &kp N           &kp M  &kp LEFT  &kp RIGHT  &kp KP_ENTER
-&kp LEFT_WIN      &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 1 INT_HENKAN  &lt 1 LANGUAGE_2  &lt_to_layer_0 2 INT_MUHENKAN      &lt 1 LANGUAGE_1  &lt 2 KP_ENTER                              &kp DEL
+&kp Q             &kp W         &kp E         &kp R           &kp T                                          &kp Y           &kp U  &lt 1 I   &kp O      &kp P
+&kp A             &kp S         &kp D         &kp F           &kp G             &none      &kp MINUS         &kp H           &kp J  &kp K     &kp L      &kp BACKSPACE
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V           &kp B             &none      &kp SEMICOLON     &kp N           &kp M  &kp LEFT  &kp RIGHT  &kp ENTER
+&kp LEFT_WIN      &kp LEFT_WIN  &kp LEFT_ALT  &lt 1 INT_KANA  &lt 3 LANGUAGE_2  &none      &lt 1 LANGUAGE_1  &lt 2 KP_ENTER                              &kp DEL
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -110,19 +110,19 @@
 
         layer_4 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+&trans  &trans  &trans  &kp LC(LEFT_ARROW)      &kp LC(RIGHT_ARROW)                          &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &kp RG(LA(LEFT_ARROW))  &kp RG(LA(RIGHT_ARROW))  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans                  &trans                   &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans                  &trans                   &trans      &trans  &trans                          &trans
             >;
         };
 
         MOUSE {
             bindings = <
-&none   &trans  &trans  &kp LG(LEFT_ARROW)      &kp LG(RIGHT_ARROW)                      &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &kp RG(LA(LEFT_ARROW))  &kp RG(LA(RIGHT))    &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
-&trans  &trans  &trans  &trans                  &trans               &trans      &trans  &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans                  &trans               &trans      &trans  &trans                                &trans
+&none   &trans  &trans  &none   &none                       &trans  &trans    &trans    &trans    &trans
+&trans  &trans  &trans  &none   &none   &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
             >;
         };
     };
