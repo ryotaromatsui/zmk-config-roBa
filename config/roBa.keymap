@@ -60,17 +60,17 @@
             bindings = <
 &none  &none  &none  &kp LC(LEFT_ARROW)      &kp LC(RIGHT_ARROW)                        &none  &none  &none  &none  &none
 &none  &none  &none  &kp RG(LA(LEFT_ARROW))  &kp RG(LA(RIGHT_ARROW))  &none      &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none                   &none                    &none      &none  &none  &none  &none  &none  &none
+&none  &none  &none  &kp LC(LEFT_ARROW)      &kp LC(RIGHT_ARROW)      &none      &none  &none  &none  &none  &none  &none
 &none  &none  &none  &none                   &none                    &none      &none  &none                       &none
             >;
         };
 
         MOUSE {
             bindings = <
-&none  &none  &none  &none  &none                    &none  &none     &none     &none     &none
-&none  &none  &none  &none  &none  &none      &none  &none  &mkp MB1  &mkp MB3  &mkp MB2  &none
-&none  &none  &none  &none  &none  &none      &none  &none  &none     &none     &none     &none
-&none  &none  &none  &none  &none  &none      &none  &none                                &none
+&none  &none  &none  &kp LC(LEFT_ARROW)      &kp LC(RIGHT_ARROW)                        &none  &none     &none     &none     &none
+&none  &none  &none  &kp RG(LA(LEFT_ARROW))  &kp RG(LA(RIGHT_ARROW))  &none      &none  &none  &mkp MB1  &mkp MB3  &mkp MB2  &none
+&none  &none  &none  &kp LC(LEFT_ARROW)      &kp LC(RIGHT_ARROW)      &none      &none  &none  &none     &none     &none     &none
+&none  &none  &none  &none                   &none                    &none      &none  &none                                &none
             >;
         };
     };
