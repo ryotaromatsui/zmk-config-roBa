@@ -67,10 +67,10 @@
 
         MOUSE {
             bindings = <
-&trans  &none  &none  &none                &none                                   &none  &none     &none     &none     &none
-&none   &none  &none  &none                &kp LEFT_WIN  &none      &none          &none  &mkp MB1  &mkp MB3  &mkp MB2  &kp BACKSPACE
-&none   &none  &none  &none                &none         &kp A      &kp BACKSPACE  &none  &none     &none     &none     &kp BACKSPACE
-&none   &none  &none  &kp LA(RIGHT_ARROW)  &mo 3         &none      &none          &none                                &none
+&trans  &none  &none  &none               &none                                          &none  &none      &none     &none     &none
+&none   &none  &none  &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &none      &none          &none  &mkp MB1   &mkp MB3  &mkp MB2  &kp BACKSPACE
+&none   &none  &none  &kp LEFT_ARROW      &kp RIGHT_ARROW      &kp A      &kp BACKSPACE  &none  &kp RG(T)  &none     &none     &kp BACKSPACE
+&none   &none  &none  &kp LEFT_CONTROL    &kp LEFT_WIN         &none      &none          &none                                 &none
             >;
         };
     };
