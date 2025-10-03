@@ -6,17 +6,18 @@
     automouse-layer = <4>;
     scroll-layers = <5>;
 
- arrows {
-     layers = <3>;
-     bindings =
-         <&kp RIGHT_ARROW>,
-         <&kp LEFT_ARROW>,
-         <&kp UP_ARROW>,
-         <&kp DOWN_ARROW>;
-     tick = <10>;
-     wait-ms = <5>;
-     tap-ms = <5>;
- };
+    arrows {
+        layers = <3>;
+        bindings =
+            <&kp RIGHT_ARROW>,
+            <&kp LEFT_ARROW>,
+            <&kp UP_ARROW>,
+            <&kp DOWN_ARROW>;
+
+        tick = <10>;
+        wait-ms = <5>;
+        tap-ms = <5>;
+    };
 };
 
 / {
@@ -69,10 +70,10 @@
 
         MOUSE {
             bindings = <
-&trans  &none          &kp LG(X)  &none               &none                                          &none  &none      &none      &none     &none
-&none   &kp RG(LS(C))  &kp LG(C)  &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &none      &none          &none  &mkp MB1   &mkp MB3   &mkp MB2  &kp BACKSPACE
-&none   &none          &kp LG(V)  &kp LEFT_ARROW      &kp RIGHT_ARROW      &kp A      &kp BACKSPACE  &none  &kp RG(T)  &kp RG(R)  &none     &kp BACKSPACE
-&none   &none          &none      &kp LEFT_CONTROL    &kp LEFT_WIN         &none      &none          &none                                  &none
+&trans  &none          &kp LG(X)  &none               &none                                          &none  &kp RG(T)         &kp RG(R)         &none     &none
+&none   &kp RG(LS(C))  &kp LG(C)  &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &none      &none          &none  &mkp MB1          &mkp MB3          &mkp MB2  &kp BACKSPACE
+&none   &none          &kp LG(V)  &kp LEFT_ARROW      &kp RIGHT_ARROW      &kp A      &kp BACKSPACE  &none  &kp LA(LEFT_GUI)  &kp LEFT_CONTROL  &none     &kp BACKSPACE
+&none   &none          &none      &kp LEFT_CONTROL    &kp LEFT_WIN         &none      &none          &none                                                &none
             >;
         };
     };
