@@ -73,7 +73,7 @@
 &trans         &none          &kp LG(X)  &none               &none                                          &none          &kp RG(T)         &kp RG(R)         &none     &none
 &none          &kp RG(LS(C))  &kp LG(C)  &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &none      &none          &kp RG(B)      &mkp MB1          &mkp MB3          &mkp MB2  &kp BACKSPACE
 &none          &none          &kp LG(V)  &kp LEFT_ARROW      &kp RIGHT_ARROW      &kp A      &kp BACKSPACE  &kp RG(SPACE)  &kp LA(LEFT_GUI)  &kp LEFT_CONTROL  &none     &kp BACKSPACE
-&kp RIGHT_GUI  &none          &none      &kp LEFT_CONTROL    &kp SPACE            &none      &none          &none                                                        &none
+&kp RIGHT_GUI  &none          &none      &kp LEFT_CONTROL    &kp LEFT_GUI         &none      &none          &none                                                        &none
             >;
         };
     };
