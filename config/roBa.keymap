@@ -21,7 +21,19 @@
 };
 
 / {
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        tab {
+            bindings = <&kp LA(LEFT_GUI)>;
+            key-positions = <19 18>;
+        };
+
+        desktop {
+            bindings = <&kp LEFT_CONTROL>;
+            key-positions = <31 30>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
