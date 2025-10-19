@@ -47,7 +47,7 @@
 &kp Q         &kp W       &kp E         &kp R         &kp T                                                         &kp Y           &kp U  &kp I         &kp O            &kp P
 &kp A         &kp S       &kp D         &kp F         &kp G             &to 0            &kp MINUS                  &kp H           &kp J  &kp K         &kp L            &kp BACKSPACE
 &kp Z         &kp X       &kp C         &kp V         &kp B             &kp PERIOD       &kp COMMA                  &kp N           &kp M  &kp QUESTION  &kp EXCLAMATION  &kp BACKSPACE
-&kp LEFT_WIN  &kp LSHIFT  &kp LEFT_ALT  &kp LEFT_GUI  &lt 3 LANGUAGE_2  &lt 2 SPACE      &mt LEFT_SHIFT LANGUAGE_1  &lt 5 KP_ENTER                                        &to 0
+&kp LEFT_WIN  &kp LSHIFT  &kp LEFT_ALT  &kp LEFT_GUI  &lt 3 LANGUAGE_2  &lt 1 SPACE      &mt LEFT_SHIFT LANGUAGE_1  &lt 5 KP_ENTER                                        &to 0
             >;
 
             sensor-bindings = <&scroll_up_down>;
