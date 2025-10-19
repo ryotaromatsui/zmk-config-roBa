@@ -77,10 +77,10 @@
 
         layer_3 {
             bindings = <
-&kp F1   &kp F2   &none    &kp LC(LEFT_ARROW)      &kp LC(RIGHT_ARROW)                        &kp NUMBER_1          &kp MINUS              &kp EQUAL     &kp LCTRL      &kp PIPE
-&kp F11  &kp F12  &kp F10  &kp RG(LA(LEFT_ARROW))  &kp RG(LA(RIGHT_ARROW))  &none      &none  &kp AT                &kp EXCLAMATION        &kp QUESTION  &kp SEMICOLON  &kp COLON
-&none    &none    &none    &kp LC(LEFT_ARROW)      &kp LC(RIGHT_ARROW)      &none      &none  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LBKT      &kp RBKT       &none
-&none    &none    &none    &none                   &none                    &none      &none  &none                                                                     &to 0
+&kp F1   &kp F2   &none    &kp LC(LEFT_ARROW)      &kp LC(RIGHT_ARROW)                        &kp DOUBLE_QUOTES  &kp MINUS             &kp EQUAL              &kp LCTRL      &kp PIPE
+&kp F11  &kp F12  &kp F10  &kp RG(LA(LEFT_ARROW))  &kp RG(LA(RIGHT_ARROW))  &none      &none  &kp EXCL           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON  &kp COLON
+&none    &none    &none    &kp LC(LEFT_ARROW)      &kp LC(RIGHT_ARROW)      &none      &none  &kp QUESTION       &kp AT                &kp FSLH               &kp AMPS       &none
+&none    &none    &none    &none                   &none                    &none      &none  &none                                                                          &to 0
             >;
 
             sensor-bindings = <&scroll_up_down>;
