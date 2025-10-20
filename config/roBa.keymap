@@ -90,7 +90,7 @@
             bindings = <
 &trans         &none          &kp LG(X)  &none           &none                                      &none          &kp RG(T)  &kp RG(R)  &none     &none
 &none          &kp RG(LS(C))  &kp LG(C)  &kp LS(TAB)     &kp TAB          &to 0      &none          &kp RG(B)      &mkp MB1   &mkp MB3   &mkp MB2  &kp BACKSPACE
-&none          &none          &kp LG(V)  &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp A      &kp BACKSPACE  &kp RG(SPACE)  &mkp MB4   &mkp MB5   &mkp MB5  &kp BACKSPACE
+&none          &none          &kp LG(V)  &kp LEFT_ARROW  &kp RIGHT_ARROW  &to 0      &kp BACKSPACE  &kp RG(SPACE)  &mkp MB4   &mkp MB5   &mkp MB5  &kp BACKSPACE
 &kp RIGHT_GUI  &none          &none      &none           &kp LCTRL        &none      &none          &none                                          &none
             >;
 
