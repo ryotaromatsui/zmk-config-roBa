@@ -77,10 +77,10 @@
 
         layer_3 {
             bindings = <
-&kp F1   &kp F2   &none    &kp LC(LEFT_ARROW)      &kp LC(RIGHT_ARROW)                        &kp DOUBLE_QUOTES  &kp MINUS             &kp EQUAL              &kp LCTRL      &kp PIPE
-&kp F11  &kp F12  &kp F10  &kp RG(LA(LEFT_ARROW))  &kp RG(LA(RIGHT_ARROW))  &none      &none  &kp EXCL           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON  &kp COLON
-&none    &none    &none    &kp LC(LEFT_ARROW)      &kp LC(RIGHT_ARROW)      &none      &none  &kp QUESTION       &kp AT                &kp FSLH               &kp AMPS       &none
-&none    &none    &none    &none                   &none                    &none      &none  &none                                                                          &to 0
+&kp F1   &kp F2   &none    &kp LC(LEFT_ARROW)      &kp LC(RIGHT_ARROW)                                  &kp DOUBLE_QUOTES  &kp MINUS             &kp EQUAL              &kp LCTRL      &kp PIPE
+&kp F11  &kp F12  &kp F10  &kp RG(LA(LEFT_ARROW))  &kp RG(LA(RIGHT_ARROW))  &none      &kp EXCLAMATION  &kp EXCL           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON  &kp COLON
+&none    &none    &none    &kp LC(LEFT_ARROW)      &kp LC(RIGHT_ARROW)      &none      &kp QUESTION     &kp QUESTION       &kp AT                &kp FSLH               &kp AMPS       &none
+&none    &none    &none    &none                   &none                    &none      &none            &none                                                                          &to 0
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -88,9 +88,9 @@
 
         MOUSE {
             bindings = <
-&trans         &none          &kp LG(X)  &none           &none                                      &none          &kp RG(T)  &kp RG(R)  &none     &none
-&none          &kp RG(LS(C))  &kp LG(C)  &kp LS(TAB)     &kp TAB          &to 0      &none          &kp RG(B)      &mkp MB1   &mkp MB3   &mkp MB2  &kp BACKSPACE
-&none          &none          &kp LG(V)  &kp LEFT_ARROW  &kp RIGHT_ARROW  &to 0      &kp BACKSPACE  &kp RG(SPACE)  &mkp MB4   &mkp MB5   &mkp MB5  &kp BACKSPACE
+&trans         &none          &kp LG(X)  &kp LG(V)       &kp LG(C)                                  &none          &kp RG(T)  &kp RG(R)  &none     &none
+&to 0          &kp RG(LS(C))  &kp LG(C)  &kp LS(TAB)     &kp TAB          &to 0      &none          &kp RG(B)      &mkp MB1   &mkp MB3   &mkp MB2  &kp BACKSPACE
+&to 0          &none          &kp LG(V)  &kp LEFT_ARROW  &kp RIGHT_ARROW  &to 0      &kp BACKSPACE  &kp RG(SPACE)  &mkp MB4   &mkp MB5   &mkp MB5  &kp BACKSPACE
 &kp RIGHT_GUI  &none          &none      &none           &kp LCTRL        &none      &none          &none                                          &none
             >;
 
