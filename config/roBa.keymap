@@ -37,7 +37,19 @@
         };
     };
 
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <10 11>;
+        };
+
+        intent {
+            bindings = <&kp LG(LS(N8))>;
+            key-positions = <10 11 2>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
@@ -55,9 +67,9 @@
 
         NUM {
             bindings = <
-&kp MINUS                   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                          &kp N0  &kp N1  &kp N2  &kp N3  &kp N0
-&kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))      &none  &none   &kp N4  &kp N5  &kp N6  &none
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &none                        &none  &none   &kp N7  &kp N8  &kp N9  &none
+&kp MINUS                   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                          &kp N1  &kp N2  &kp N3  &kp N0  &kp N0
+&kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))      &none  &kp N4  &kp N5  &kp N6  &kp N0  &none
+&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &none                        &none  &kp N7  &kp N8  &kp N9  &kp N0  &none
 &none                       &none            &none            &none            &none         &none                        &none  &none                           &none
             >;
 
@@ -88,10 +100,10 @@
 
         MOUSE {
             bindings = <
-&trans         &none          &kp LG(X)  &kp LG(V)       &kp LG(C)                                  &none          &kp RG(T)  &kp RG(R)  &none     &none
-&to 0          &kp RG(LS(C))  &kp LG(C)  &kp LS(TAB)     &kp TAB          &to 0      &none          &kp RG(B)      &mkp MB1   &mkp MB3   &mkp MB2  &kp BACKSPACE
-&to 0          &none          &kp LG(V)  &kp LEFT_ARROW  &kp RIGHT_ARROW  &to 0      &kp BACKSPACE  &kp RG(SPACE)  &mkp MB4   &mkp MB5   &mkp MB5  &kp BACKSPACE
-&kp RIGHT_GUI  &none          &none      &none           &kp LCTRL        &none      &none          &none                                          &none
+&trans         &kp LG(LS(C))  &kp LG(X)  &kp LG(V)       &kp LG(C)                                  &none  &kp RG(T)  &kp RG(R)  &none     &none
+&to 0          &none          &none      &kp LS(TAB)     &kp TAB          &to 0      &kp LG(B)      &none  &mkp MB1   &mkp MB3   &mkp MB2  &kp BACKSPACE
+&to 0          &none          &none      &kp LEFT_ARROW  &kp RIGHT_ARROW  &to 0      &kp LG(SPACE)  &none  &mkp MB4   &mkp MB5   &mkp MB5  &kp BACKSPACE
+&kp RIGHT_GUI  &none          &none      &none           &kp LCTRL        &none      &none          &none                                  &none
             >;
 
             sensor-bindings = <&scroll_up_down>;
