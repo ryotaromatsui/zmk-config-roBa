@@ -100,10 +100,10 @@
 
         MOUSE {
             bindings = <
-&trans         &kp LG(LS(C))  &kp LG(X)  &kp LG(V)       &kp LG(C)                                  &none  &kp RG(T)  &kp RG(R)  &none     &none
-&to 0          &none          &none      &kp LS(TAB)     &kp TAB          &to 0      &kp LG(B)      &none  &mkp MB1   &mkp MB3   &mkp MB2  &kp BACKSPACE
-&to 0          &none          &none      &kp LEFT_ARROW  &kp RIGHT_ARROW  &to 0      &kp LG(SPACE)  &none  &mkp MB4   &mkp MB5   &mkp MB5  &kp BACKSPACE
-&kp RIGHT_GUI  &none          &none      &none           &kp LCTRL        &none      &none          &none                                  &none
+&trans         &kp LG(LS(C))  &kp LG(X)  &kp LG(V)       &kp LG(C)                                  &none          &kp RG(T)  &kp RG(R)  &none     &none
+&to 0          &none          &none      &kp LS(TAB)     &kp TAB          &to 0      &kp LG(B)      &none          &mkp MB1   &mkp MB3   &mkp MB2  &kp BACKSPACE
+&to 0          &none          &none      &kp LEFT_ARROW  &kp RIGHT_ARROW  &to 0      &kp LG(SPACE)  &none          &mkp MB4   &mkp MB5   &mkp MB5  &kp BACKSPACE
+&kp RIGHT_GUI  &none          &none      &none           &kp LCTRL        &none      &kp LANG1      &kp LC(ENTER)                                  &none
             >;
 
             sensor-bindings = <&scroll_up_down>;
