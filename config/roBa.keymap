@@ -54,6 +54,11 @@
             bindings = <&to 0>;
             key-positions = <18 19>;
         };
+
+        todefaultlayer {
+            bindings = <&none>;
+            key-positions = <13 14>;
+        };
     };
 
     keymap {
