@@ -56,7 +56,7 @@
         };
 
         todefaultlayer {
-            bindings = <&none>;
+            bindings = <&to 0>;
             key-positions = <13 14>;
         };
     };
