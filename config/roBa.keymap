@@ -55,7 +55,7 @@
             key-positions = <18 19>;
         };
 
-        todefaultlayer {
+        todefaultlayer0 {
             bindings = <&to 0>;
             key-positions = <13 14>;
         };
