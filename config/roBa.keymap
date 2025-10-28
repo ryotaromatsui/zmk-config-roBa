@@ -59,6 +59,20 @@
             bindings = <&to 0>;
             key-positions = <13 14>;
         };
+
+        slack {
+            bindings = <&slackstump>;
+            key-positions = <7 6>;
+        };
+    };
+
+    macros {
+        slackstump: slackstump {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&mkp MB2 &kp R>;
+            label = "SLACKSTUMP";
+        };
     };
 
     keymap {
