@@ -137,7 +137,7 @@
         MOUSE {
             bindings = <
 &trans         &kp LG(LS(C))  &kp LG(X)  &kp LG(V)       &kp LG(C)                                                       &kp LG(T)       &none      &kp LG(F)  &none     &kp LG(R)
-&to 0          &none          &none      &kp LS(TAB)     &kp TAB               &to 0            &kp LG(B)                &none           &mouceto0  &mkp MB3   &mkp MB2  &kp BACKSPACE
+&to 0          &none          &none      &kp LS(TAB)     &kp TAB               &to 0            &kp LG(B)                &mkp MB1        &mouceto0  &mkp MB3   &mkp MB2  &kp BACKSPACE
 &to 0          &none          &none      &kp LEFT_ARROW  &kp RIGHT_ARROW       &to 0            &kp LG(SPACE)            &none           &mkp MB4   &mkp MB5   &mkp MB5  &kp BACKSPACE
 &kp RIGHT_GUI  &none          &none      &kp LEFT_SHIFT  &mt LCTRL LANGUAGE_2  &lt 1 SPACE      &mt LEFT_GUI LANGUAGE_1  &lt 5 KP_ENTER                                  &none
             >;
