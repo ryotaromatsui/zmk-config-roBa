@@ -60,7 +60,7 @@
         };
 
         toDefaultlayer {
-            bindings = <&mkp MB1>;
+            bindings = <&slackstump>;
             key-positions = <18 19>;
         };
 
