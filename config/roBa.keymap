@@ -35,6 +35,15 @@
 
             tap-ms = <20>;
         };
+
+        hold_mouceto0: hold_mouceto0 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_MOUCETO0";
+            bindings = <&mkp>, <&mouceto0>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
     };
 
     combos {
@@ -62,7 +71,7 @@
 
         slack {
             bindings = <&slackstump>;
-            key-positions = <7 6>;
+            key-positions = <30 31>;
         };
 
         kaigyo {
@@ -136,10 +145,10 @@
 
         MOUSE {
             bindings = <
-&trans         &kp LG(LS(C))  &kp LG(X)  &kp LG(V)       &kp LG(C)                                                       &kp LG(T)       &none      &kp LG(F)  &none     &kp LG(R)
-&to 0          &none          &none      &kp LS(TAB)     &kp TAB               &to 0            &kp LG(B)                &none           &mouceto0  &mkp MB3   &mkp MB2  &kp BACKSPACE
-&to 0          &none          &none      &kp LEFT_ARROW  &kp RIGHT_ARROW       &to 0            &kp LG(SPACE)            &none           &mkp MB4   &mkp MB5   &mkp MB5  &kp BACKSPACE
-&kp RIGHT_GUI  &none          &none      &kp LEFT_SHIFT  &mt LCTRL LANGUAGE_2  &lt 1 SPACE      &mt LEFT_GUI LANGUAGE_1  &lt 5 KP_ENTER                                  &none
+&trans         &kp LG(LS(C))  &kp LG(X)  &kp LG(V)       &kp LG(C)                                                       &kp LG(T)       &none                 &kp LG(F)  &none     &kp LG(R)
+&to 0          &none          &none      &kp LS(TAB)     &kp TAB               &to 0            &kp LG(B)                &none           &hold_mouceto0 MB1 0  &mkp MB3   &mkp MB2  &kp BACKSPACE
+&to 0          &none          &none      &kp LEFT_ARROW  &kp RIGHT_ARROW       &to 0            &kp LG(SPACE)            &none           &mkp MB4              &mkp MB5   &mkp MB5  &kp BACKSPACE
+&kp RIGHT_GUI  &none          &none      &kp LEFT_SHIFT  &mt LCTRL LANGUAGE_2  &lt 1 SPACE      &mt LEFT_GUI LANGUAGE_1  &lt 5 KP_ENTER                                             &none
             >;
 
             sensor-bindings = <&scroll_up_down>;
