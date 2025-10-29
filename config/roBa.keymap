@@ -42,7 +42,7 @@
             bindings = <&mkp>, <&mouceto0>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <60>;
+            tapping-term-ms = <80>;
             flavor = "tap-preferred";
         };
     };
@@ -94,6 +94,20 @@
             #binding-cells = <0>;
             bindings = <&mkp MB1 &to 0>;
             label = "MOUCETO0";
+        };
+
+        kana_to_0: kana_to_0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_1 &to 0>;
+            label = "KANA_TO_0";
+        };
+
+        alpha_to_0: alpha_to_0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_2 &to 0>;
+            label = "ALPHA_TO_0";
         };
     };
 
