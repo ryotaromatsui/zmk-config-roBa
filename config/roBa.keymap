@@ -42,7 +42,7 @@
             bindings = <&mkp>, <&mouceto0>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <100>;
+            tapping-term-ms = <60>;
             flavor = "tap-preferred";
         };
     };
