@@ -95,6 +95,20 @@
             bindings = <&mkp MB1 &to 0>;
             label = "MOUCETO0";
         };
+
+        newtab_to_layer0: newtab_to_layer0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(T) &to 0>;
+            label = "NEWTAB_TO_LAYER0";
+        };
+
+        find_to_layer0: find_to_layer0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(F) &to 0>;
+            label = "FIND_TO_LAYER0";
+        };
     };
 
     keymap {
@@ -146,10 +160,10 @@
 
         MOUSE {
             bindings = <
-&trans         &kp LG(LS(C))  &kp LG(X)  &kp LG(V)       &kp LG(C)                                                       &kp LG(T)       &none                 &kp LG(F)  &none     &kp LG(R)
-&to 0          &none          &none      &kp LS(TAB)     &kp TAB               &to 0            &kp LG(B)                &none           &hold_mouceto0 MB1 0  &mkp MB3   &mkp MB2  &kp BACKSPACE
-&to 0          &none          &none      &kp LEFT_ARROW  &kp RIGHT_ARROW       &to 0            &kp LG(SPACE)            &none           &mkp MB4              &mkp MB5   &mkp MB5  &kp BACKSPACE
-&kp RIGHT_GUI  &none          &none      &kp LEFT_SHIFT  &mt LCTRL LANGUAGE_2  &lt 1 SPACE      &mt LEFT_GUI LANGUAGE_1  &lt 5 KP_ENTER                                             &none
+&trans         &kp LG(LS(C))  &kp LG(X)  &kp LG(V)       &kp LG(C)                                                       &newtab_to_layer0  &none                 &find_to_layer0  &none     &kp LG(R)
+&to 0          &none          &none      &kp LS(TAB)     &kp TAB               &to 0            &kp LG(B)                &none              &hold_mouceto0 MB1 0  &mkp MB3         &mkp MB2  &kp BACKSPACE
+&to 0          &none          &none      &kp LEFT_ARROW  &kp RIGHT_ARROW       &to 0            &kp LG(SPACE)            &none              &mkp MB4              &mkp MB5         &mkp MB5  &kp BACKSPACE
+&kp RIGHT_GUI  &none          &none      &kp LEFT_SHIFT  &mt LCTRL LANGUAGE_2  &lt 1 SPACE      &mt LEFT_GUI LANGUAGE_1  &lt 5 KP_ENTER                                                      &none
             >;
 
             sensor-bindings = <&scroll_up_down>;
