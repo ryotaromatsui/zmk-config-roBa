@@ -171,10 +171,10 @@
 
         layer_5 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &kp RG(Z)  &kp RG(Y)  &kp UP    &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans     &kp LEFT   &kp DOWN  &kp RIGHT  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans     &trans     &trans    &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                     &trans
+&trans  &trans  &trans  &trans  &trans                      &kp RG(Z)  &kp RG(RS(Z))  &kp UP    &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans     &kp LEFT       &kp DOWN  &kp RIGHT  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans     &trans         &trans    &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                         &trans
             >;
         };
     };
