@@ -183,10 +183,10 @@
 
         layer_3 {
             bindings = <
-&kp F1   &kp F2   &none    &kp LC(LEFT_ARROW)      &kp LC(RIGHT_ARROW)                                  &kp AT_SIGN           &kp SLASH              &kp HASH  &kp LCTRL      &kp PIPE
-&kp F11  &kp F12  &kp F10  &kp RG(LA(LEFT_ARROW))  &kp RG(LA(RIGHT_ARROW))  &none      &kp EXCLAMATION  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PLUS  &kp SEMICOLON  &kp COLON
-&none    &none    &none    &kp LC(LEFT_ARROW)      &kp LC(RIGHT_ARROW)      &none      &kp QUESTION     &kp GRAVE             &kp AT                 &kp FSLH  &kp AMPS       &none
-&none    &none    &none    &none                   &none                    &none      &none            &none                                                                 &to 0
+&kp F1   &kp F2   &none    &kp LC(LEFT_ARROW)      &kp LC(RIGHT_ARROW)                                  &kp GRAVE             &kp HASH               &kp DOUBLE_QUOTES  &kp LCTRL      &kp PIPE
+&kp F11  &kp F12  &kp F10  &kp RG(LA(LEFT_ARROW))  &kp RG(LA(RIGHT_ARROW))  &none      &kp EXCLAMATION  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PLUS           &kp SEMICOLON  &kp COLON
+&none    &none    &none    &kp LC(LEFT_ARROW)      &kp LC(RIGHT_ARROW)      &none      &kp QUESTION     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp ASTERISK       &kp AMPS       &none
+&none    &none    &none    &none                   &none                    &none      &none            &none                                                                          &to 0
             >;
 
             sensor-bindings = <&scroll_up_down>;
