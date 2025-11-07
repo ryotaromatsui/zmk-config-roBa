@@ -53,7 +53,7 @@
 
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <100>;
+            tapping-term-ms = <70>;
         };
 
         MOUCE_LAYER_LANG2: MOUCE_LAYER_LANG2 {
@@ -62,7 +62,7 @@
             bindings = <&kp>, <&LANG2_to_Layer0>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <100>;
+            tapping-term-ms = <70>;
             flavor = "tap-preferred";
         };
 
