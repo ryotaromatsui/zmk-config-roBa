@@ -65,6 +65,13 @@
             tapping-term-ms = <100>;
             flavor = "balanced";
         };
+
+        p_reload: p_reload {
+            compatible = "zmk,behavior-tap-dance";
+            label = "P_RELOAD";
+            #binding-cells = <0>;
+            bindings = <&kp P>, <&kp LG(R)>;
+        };
     };
 
     combos {
@@ -150,7 +157,7 @@
 
         default_layer {
             bindings = <
-&kp Q         &kp W       &kp E         &kp R           &kp T                                                       &kp Y           &kp U  &kp I        &kp O      &kp P
+&kp Q         &kp W       &kp E         &kp R           &kp T                                                       &kp Y           &kp U  &kp I        &kp O      &p_reload
 &kp A         &kp S       &kp D         &kp F           &kp G             &to 0            &kp MINUS                &kp H           &kp J  &kp K        &kp L      &kp BACKSPACE
 &kp Z         &kp X       &kp C         &kp V           &kp B             &kp PERIOD       &kp COMMA                &kp N           &kp M  &kp AT_SIGN  &kp SLASH  &kp BACKSPACE
 &kp LEFT_WIN  &kp LSHIFT  &kp LEFT_ALT  &kp LEFT_SHIFT  &lt 3 LANGUAGE_2  &lt 1 SPACE      &mt LEFT_GUI LANGUAGE_1  &lt 5 KP_ENTER                                 &to 0
@@ -194,7 +201,7 @@
 
         MOUSE {
             bindings = <
-&kp RG(LS(C))  &none  &kp LG(X)  &kp LG(V)       &kp LG(C)                                                                   &newtab_to_layer0  &none                 &find_to_layer0  &none     &kp LG(R)
+&kp RG(LS(C))  &none  &kp LG(X)  &kp LG(V)       &kp LG(C)                                                                   &newtab_to_layer0  &none                 &find_to_layer0  &none     &p_reload
 &to 0          &none  &none      &kp LS(TAB)     &kp TAB                     &to 0            &kp LG(B)                      &none              &hold_mouceto0 MB1 0  &mkp MB3         &mkp MB2  &kp BACKSPACE
 &to 0          &none  &none      &kp LEFT_ARROW  &kp RIGHT_ARROW             &to 0            &kp LG(SPACE)                  &none              &mkp MB4              &mkp MB5         &mkp MB5  &kp BACKSPACE
 &kp RIGHT_GUI  &none  &none      &kp LEFT_SHIFT  &MOUCE_LAYER_LANG2 LCTRL 0  &lt 1 SPACE      &MOUCE_LAYER_LANG1 LEFT_GUI 0  &lt 5 KP_ENTER                                                      &none
