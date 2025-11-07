@@ -52,7 +52,7 @@
             bindings = <&kp>, <&LANG1_to_Layer0>;
 
             #binding-cells = <2>;
-            flavor = "balanced";
+            flavor = "tap-preferred";
             tapping-term-ms = <100>;
         };
 
@@ -63,7 +63,7 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <100>;
-            flavor = "balanced";
+            flavor = "tap-preferred";
         };
 
         p_reload: p_reload {
