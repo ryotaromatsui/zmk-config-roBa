@@ -282,10 +282,10 @@
 
         MOUSE {
             bindings = <
-&screenshot_doubetouch  &none          &kp LG(X)  &kp LG(V)       &kp LG(C)                                                                         &DOUBLECLICK_NEWTAB     &none                 &CTRL_F_K  &none     &p_reload
-&to 0                   &none          &none      &kp LS(TAB)     &kp TAB                            &to 0             &kp LG(B)                    &DOUBLE_TAP_SLACKTTUMP  &hold_mouceto0 MB1 0  &mkp MB3   &mkp MB2  &kp BACKSPACE
-&to 0                   &kp LS(LC(C))  &kp LC(C)  &kp LEFT_ARROW  &kp RIGHT_ARROW                    &kp UP_ARROW      &kp LG(SPACE)                &none                   &mkp MB4              &mkp MB5   &mkp MB5  &kp BACKSPACE
-&kp RIGHT_GUI           &none          &none      &kp LEFT_SHIFT  &MOUSE_LANG2_SHIFT LEFT_CONTROL 0  &lt 1 SPACE       &MOUSE_LANG1_GUI LEFT_GUI 0  &lt 5 KP_ENTER                                                     &none
+&screenshot_doubetouch  &none          &kp LG(X)  &kp LG(V)       &kp LG(C)                                                                         &DOUBLECLICK_NEWTAB  &none                 &CTRL_F_K  &none     &p_reload
+&to 0                   &none          &none      &kp LS(TAB)     &kp TAB                            &to 0             &kp LG(B)                    &slackstump          &hold_mouceto0 MB1 0  &mkp MB3   &mkp MB2  &kp BACKSPACE
+&to 0                   &kp LS(LC(C))  &kp LC(C)  &kp LEFT_ARROW  &kp RIGHT_ARROW                    &kp UP_ARROW      &kp LG(SPACE)                &none                &mkp MB4              &mkp MB5   &mkp MB5  &kp BACKSPACE
+&kp RIGHT_GUI           &none          &none      &kp LEFT_SHIFT  &MOUSE_LANG2_SHIFT LEFT_CONTROL 0  &lt 1 SPACE       &MOUSE_LANG1_GUI LEFT_GUI 0  &lt 5 KP_ENTER                                                  &none
             >;
 
             sensor-bindings = <&scroll_up_down>;
