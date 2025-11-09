@@ -224,10 +224,10 @@
 
         MOUSE {
             bindings = <
-&screenshot_doubetouch  &none          &kp LG(X)  &kp LG(V)       &kp LG(C)                                                           &newtab_to_layer0  &none                 &find_to_layer0  &none                     &p_reload
-&to 0                   &none          &none      &kp LS(TAB)     &kp TAB                          &to 0            &kp LG(B)         &none              &hold_mouceto0 MB1 0  &mkp MB3         &SLACK_STAMP_RIGHT_CLICK  &kp BACKSPACE
-&to 0                   &kp LS(LC(C))  &kp LC(C)  &kp LEFT_ARROW  &kp RIGHT_ARROW                  &to 0            &kp LG(SPACE)     &none              &mkp MB4              &mkp MB5         &mkp MB5                  &kp BACKSPACE
-&kp RIGHT_GUI           &none          &none      &kp LEFT_SHIFT  &MOUSE_LANG2_SHIFT LEFT_SHIFT 0  &lt 1 SPACE      &LANG1_to_Layer0  &lt 5 KP_ENTER                                                                      &none
+&screenshot_doubetouch  &none          &kp LG(X)  &kp LG(V)       &kp LG(C)                                                             &newtab_to_layer0  &none                 &find_to_layer0  &none                     &p_reload
+&to 0                   &none          &none      &kp LS(TAB)     &kp TAB                            &to 0            &kp LG(B)         &none              &hold_mouceto0 MB1 0  &mkp MB3         &SLACK_STAMP_RIGHT_CLICK  &kp BACKSPACE
+&to 0                   &kp LS(LC(C))  &kp LC(C)  &kp LEFT_ARROW  &kp RIGHT_ARROW                    &to 0            &kp LG(SPACE)     &none              &mkp MB4              &mkp MB5         &mkp MB5                  &kp BACKSPACE
+&kp RIGHT_GUI           &none          &none      &kp LEFT_SHIFT  &MOUSE_LANG2_SHIFT LEFT_CONTROL 0  &lt 1 SPACE      &LANG1_to_Layer0  &lt 5 KP_ENTER                                                                      &none
             >;
 
             sensor-bindings = <&scroll_up_down>;
