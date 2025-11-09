@@ -118,6 +118,13 @@
             #binding-cells = <2>;
             tapping-term-ms = <100>;
         };
+
+        CTRL_F_K: CTRL_F_K {
+            compatible = "zmk,behavior-tap-dance";
+            label = "CTRL_F_K";
+            #binding-cells = <0>;
+            bindings = <&find_to_layer0>, <&findK_to_layer0>;
+        };
     };
 
     combos {
@@ -196,6 +203,13 @@
             bindings = <&to 0 &kp LANGUAGE_2>;
             label = "LANG2_TO_LAYER0";
         };
+
+        findK_to_layer0: findK_to_layer0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&to 0 &kp RG(K)>;
+            label = "FINDK_TO_LAYER0";
+        };
     };
 
     keymap {
@@ -247,10 +261,10 @@
 
         MOUSE {
             bindings = <
-&screenshot_doubetouch  &none          &kp LG(X)  &kp LG(V)       &kp LG(C)                                                                         &DOUBLECLICK_NEWTAB  &none                 &find_to_layer0  &none                     &p_reload
-&to 0                   &none          &none      &kp LS(TAB)     &kp TAB                            &to 0             &kp LG(B)                    &none                &hold_mouceto0 MB1 0  &mkp MB3         &SLACK_STAMP_RIGHT_CLICK  &kp BACKSPACE
-&to 0                   &kp LS(LC(C))  &kp LC(C)  &kp LEFT_ARROW  &kp RIGHT_ARROW                    &kp UP_ARROW      &kp LG(SPACE)                &none                &mkp MB4              &mkp MB5         &mkp MB5                  &kp BACKSPACE
-&kp RIGHT_GUI           &none          &none      &kp LEFT_SHIFT  &MOUSE_LANG2_SHIFT LEFT_CONTROL 0  &lt 1 SPACE       &MOUSE_LANG1_GUI LEFT_GUI 0  &lt 5 KP_ENTER                                                                        &none
+&screenshot_doubetouch  &none          &kp LG(X)  &kp LG(V)       &kp LG(C)                                                                         &DOUBLECLICK_NEWTAB  &none                 &CTRL_F_K  &none                     &p_reload
+&to 0                   &none          &none      &kp LS(TAB)     &kp TAB                            &to 0             &kp LG(B)                    &none                &hold_mouceto0 MB1 0  &mkp MB3   &SLACK_STAMP_RIGHT_CLICK  &kp BACKSPACE
+&to 0                   &kp LS(LC(C))  &kp LC(C)  &kp LEFT_ARROW  &kp RIGHT_ARROW                    &kp UP_ARROW      &kp LG(SPACE)                &none                &mkp MB4              &mkp MB5   &mkp MB5                  &kp BACKSPACE
+&kp RIGHT_GUI           &none          &none      &kp LEFT_SHIFT  &MOUSE_LANG2_SHIFT LEFT_CONTROL 0  &lt 1 SPACE       &MOUSE_LANG1_GUI LEFT_GUI 0  &lt 5 KP_ENTER                                                                  &none
             >;
 
             sensor-bindings = <&scroll_up_down>;
