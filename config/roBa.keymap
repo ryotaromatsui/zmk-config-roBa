@@ -126,18 +126,18 @@
             bindings = <&find_to_layer0>, <&findK_to_layer0>;
         };
 
-        Haihun_question: Haihun_question {
+        Haihun_Bikkuri: Haihun_Bikkuri {
             compatible = "zmk,behavior-tap-dance";
-            label = "HAIHUN_QUESTION";
+            label = "HAIHUN_BIKKURI";
             #binding-cells = <0>;
-            bindings = <&kp MINUS>, <&kp QUESTION>;
+            bindings = <&kp MINUS>, <&kp EXCLAMATION>;
         };
 
-        Connma_Bikkuri: Connma_Bikkuri {
+        Connma_Question: Connma_Question {
             compatible = "zmk,behavior-tap-dance";
-            label = "CONNMA_BIKKURI";
+            label = "CONNMA_QUESTION";
             #binding-cells = <0>;
-            bindings = <&kp COMMA>, <&kp EXCLAMATION>;
+            bindings = <&kp COMMA>, <&kp QUESTION>;
         };
     };
 
@@ -232,8 +232,8 @@
         default_layer {
             bindings = <
 &kp Q         &kp W       &kp E         &kp R           &kp T                                                       &kp Y           &kp U  &kp I        &kp O           &kp P
-&kp A         &kp S       &kp D         &kp F           &kp G             &to 0            &Haihun_question         &kp H           &kp J  &kp K        &SLACK_STAMP_L  &kp BACKSPACE
-&kp Z         &kp X       &kp C         &kp V           &kp B             &kp PERIOD       &Connma_Bikkuri          &kp N           &kp M  &kp AT_SIGN  &kp SLASH       &kp BACKSPACE
+&kp A         &kp S       &kp D         &kp F           &kp G             &to 0            &Haihun_Bikkuri          &kp H           &kp J  &kp K        &SLACK_STAMP_L  &kp BACKSPACE
+&kp Z         &kp X       &kp C         &kp V           &kp B             &kp PERIOD       &Connma_Question         &kp N           &kp M  &kp AT_SIGN  &kp SLASH       &kp BACKSPACE
 &kp LEFT_WIN  &kp LSHIFT  &kp LEFT_ALT  &kp LEFT_SHIFT  &lt 3 LANGUAGE_2  &lt 1 SPACE      &mt LEFT_GUI LANGUAGE_1  &lt 5 KP_ENTER                                      &to 0
             >;
 
