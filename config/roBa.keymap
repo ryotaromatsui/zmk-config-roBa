@@ -126,14 +126,14 @@
         newtab_to_layer0: newtab_to_layer0 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(T) &to 0>;
+            bindings = <&to 0 &kp LG(T)>;
             label = "NEWTAB_TO_LAYER0";
         };
 
         find_to_layer0: find_to_layer0 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(F) &to 0>;
+            bindings = <&to 0 &kp LG(F)>;
             label = "FIND_TO_LAYER0";
         };
 
