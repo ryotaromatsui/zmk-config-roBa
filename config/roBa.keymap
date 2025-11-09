@@ -112,14 +112,14 @@
         slackstump: slackstump {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&mkp MB2 &kp R &to 0>;
+            bindings = <&to 0 &mkp MB2 &kp R>;
             label = "SLACKSTUMP";
         };
 
         mouceto0: mouceto0 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&mkp MB1 &to 0>;
+            bindings = <&to 0 &mkp MB1>;
             label = "MOUCETO0";
         };
 
