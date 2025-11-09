@@ -177,7 +177,7 @@
         };
 
         kaigyo {
-            bindings = <&kp LS(ENTER)>;
+            bindings = <&kp LA(ENTER)>;
             key-positions = <28 41>;
         };
     };
