@@ -214,14 +214,14 @@
         LANG1_to_Layer0: LANG1_to_layer0 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 0 &kp LANGUAGE_1>;
+            bindings = <&to 0 &kp LANGUAGE_1 &to 0>;
             label = "LANG1_TO_LAYER0";
         };
 
         LANG2_to_Layer0: LANG2_to_Layer0 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 0 &kp LANGUAGE_2>;
+            bindings = <&to 0 &kp LANGUAGE_2 &to 0>;
             label = "LANG2_TO_LAYER0";
         };
 
