@@ -202,14 +202,14 @@
         newtab_to_layer0: newtab_to_layer0 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 0 &kp LG(T)>;
+            bindings = <&to 0 &kp LG(T) &kp LANGUAGE_1>;
             label = "NEWTAB_TO_LAYER0";
         };
 
         find_to_layer0: find_to_layer0 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 0 &kp LG(F)>;
+            bindings = <&to 0 &kp LG(F) &kp LANGUAGE_1>;
             label = "FIND_TO_LAYER0";
         };
 
@@ -230,7 +230,7 @@
         findK_to_layer0: findK_to_layer0 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 0 &kp RG(K)>;
+            bindings = <&to 0 &kp RG(K) &kp LANGUAGE_1>;
             label = "FINDK_TO_LAYER0";
         };
     };
