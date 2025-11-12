@@ -188,7 +188,7 @@
         slackstump: slackstump {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 0 &mkp MB2 &kp R>;
+            bindings = <&to 0 &mkp MB2 &kp R &kp LANGUAGE_2>;
             label = "SLACKSTUMP";
         };
 
@@ -297,6 +297,15 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans     &kp LEFT       &kp DOWN  &kp RIGHT  &kp DELETE
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans     &trans         &trans    &trans     &kp DELETE
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                         &trans
+            >;
+        };
+
+        layer_6 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
         };
     };
