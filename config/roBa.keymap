@@ -230,7 +230,7 @@
         findK_to_layer0: findK_to_layer0 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 0 &kp RG(K) &kp LANGUAGE_1>;
+            bindings = <&to 0 &kp RG(K) &kp LANGUAGE_2>;
             label = "FINDK_TO_LAYER0";
         };
     };
