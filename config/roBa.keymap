@@ -233,6 +233,34 @@
             bindings = <&to 0 &kp RG(K) &kp LANGUAGE_2>;
             label = "FINDK_TO_LAYER0";
         };
+
+        modoru_doubleclick: modoru_doubleclick {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &mkp MB4>;
+            label = "MODORU_DOUBLECLICK";
+        };
+
+        susumu_doubleclick: susumu_doubleclick {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &mkp MB5>;
+            label = "SUSUMU_DOUBLECLICK";
+        };
+
+        hauhun_ctrlz_doubleclick: hauhun_ctrlz_doubleclick {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp MINUS &kp RG(Z)>;
+            label = "HAUHUN_CTRLZ_DOUBLECLICK";
+        };
+
+        L_ctrlshiftz_doubleclick: ctrlshiftz_doubleclick {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp L &kp RG(LS(Z))>;
+            label = "CTRLSHIFTZ_DOUBLECLICK";
+        };
     };
 
     keymap {
@@ -240,10 +268,10 @@
 
         default_layer {
             bindings = <
-&kp Q         &kp W       &kp E         &kp R                     &kp T                                                       &kp P           &kp Y  &kp U  &kp I   &kp O
-&kp A         &kp S       &kp D         &kp F                     &kp G             &to 0            &Haihun_Bikkuri          &kp MINUS       &kp H  &kp J  &kp K   &kp BACKSPACE
-&kp Z         &kp X       &kp C         &kp V                     &kp B             &kp PERIOD       &Connma_Question         &kp L           &kp N  &kp M  &kp AT  &kp BACKSPACE
-&kp LEFT_WIN  &kp LSHIFT  &kp LEFT_ALT  &mt LEFT_SHIFT LS(ENTER)  &lt 3 LANGUAGE_2  &lt 1 SPACE      &mt LEFT_GUI LANGUAGE_1  &lt 5 KP_ENTER                        &to 0
+&kp Q         &kp W       &kp E         &kp R                     &kp T                                                       &kp P                      &kp Y  &kp U  &kp I   &kp O
+&kp A         &kp S       &kp D         &kp F                     &kp G             &to 0            &Haihun_Bikkuri          &hauhun_ctrlz_doubleclick  &kp H  &kp J  &kp K   &kp BACKSPACE
+&kp Z         &kp X       &kp C         &kp V                     &kp B             &kp PERIOD       &Connma_Question         &L_ctrlshiftz_doubleclick  &kp N  &kp M  &kp AT  &kp BACKSPACE
+&kp LEFT_WIN  &kp LSHIFT  &kp LEFT_ALT  &mt LEFT_SHIFT LS(ENTER)  &lt 3 LANGUAGE_2  &lt 1 SPACE      &mt LEFT_GUI LANGUAGE_1  &lt 5 KP_ENTER                                   &to 0
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -282,10 +310,10 @@
 
         MOUSE {
             bindings = <
-&screenshot_doubetouch  &none          &kp LG(X)  &kp LG(V)       &kp LG(C)                                                                         &DOUBLECLICK_NEWTAB  &none                 &CTRL_F_K  &none     &p_reload
-&to 0                   &none          &none      &kp LS(TAB)     &kp TAB                            &to 0             &kp LG(B)                    &slackstump          &hold_mouceto0 MB1 0  &mkp MB3   &mkp MB2  &kp BACKSPACE
-&to 0                   &kp LS(LC(C))  &kp LC(C)  &kp LEFT_ARROW  &kp RIGHT_ARROW                    &kp UP_ARROW      &kp LG(SPACE)                &none                &mkp MB4              &mkp MB5   &mkp MB5  &kp BACKSPACE
-&kp RIGHT_GUI           &none          &none      &kp LEFT_SHIFT  &MOUSE_LANG2_SHIFT LEFT_CONTROL 0  &lt 1 SPACE       &MOUSE_LANG1_GUI LEFT_GUI 0  &lt 5 KP_ENTER                                                  &none
+&screenshot_doubetouch  &none          &kp LG(X)  &kp LG(V)       &kp LG(C)                                                                         &DOUBLECLICK_NEWTAB  &none                 &CTRL_F_K            &none     &p_reload
+&to 0                   &none          &none      &kp LS(TAB)     &kp TAB                            &to 0             &kp LG(B)                    &slackstump          &hold_mouceto0 MB1 0  &mkp MB3             &mkp MB2  &kp BACKSPACE
+&to 0                   &kp LS(LC(C))  &kp LC(C)  &kp LEFT_ARROW  &kp RIGHT_ARROW                    &kp UP_ARROW      &kp LG(SPACE)                &none                &modoru_doubleclick   &susumu_doubleclick  &none     &kp BACKSPACE
+&kp RIGHT_GUI           &none          &none      &kp LEFT_SHIFT  &MOUSE_LANG2_SHIFT LEFT_CONTROL 0  &lt 1 SPACE       &MOUSE_LANG1_GUI LEFT_GUI 0  &lt 5 KP_ENTER                                                            &none
             >;
 
             sensor-bindings = <&scroll_up_down>;
