@@ -153,7 +153,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "HAIHUN_DOUBLETAP_CTRLZ";
             #binding-cells = <0>;
-            bindings = <&kp MINUS>, <&kp RG(Z)>;
+            bindings = <&kp MINUS>, <&ctrlz_to_layer0>;
         };
 
         L_doubletap_ctrlshiftz: L_doubletap_ctrlshiftz {
@@ -275,6 +275,13 @@
             bindings = <&none &mkp MB5>;
             label = "SUSUMU_DOUBLECLICK";
         };
+
+        ctrlz_to_layer0: ctrlz_to_layer9 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(Z) &to 0>;
+            label = "CTRLZ_TO_LAYER9";
+        };
     };
 
     keymap {
@@ -325,8 +332,8 @@
         MOUSE {
             bindings = <
 &screenshot_doubetouch  &none          &kp LG(X)  &kp LG(V)       &kp LG(C)                                                                         &DOUBLECLICK_NEWTAB  &none                 &CTRL_F_K       &none     &p_reload
-&to 0                   &none          &none      &kp LS(TAB)     &kp TAB                            &to 0             &kp LG(B)                    &slackstump          &hold_mouceto0 MB1 0  &mkp MB3        &mkp MB2  &kp BACKSPACE
-&to 0                   &kp LS(LC(C))  &kp LC(C)  &kp LEFT_ARROW  &kp RIGHT_ARROW                    &kp UP_ARROW      &kp LG(SPACE)                &none                &doubletap_mb4        &doubletap_mb5  &none     &kp BACKSPACE
+&to 0                   &none          &none      &kp LS(TAB)     &kp TAB                            &to 0             &kp LG(B)                    &ctrlz_to_layer0     &hold_mouceto0 MB1 0  &mkp MB3        &mkp MB2  &kp BACKSPACE
+&to 0                   &kp LS(LC(C))  &kp LC(C)  &kp LEFT_ARROW  &kp RIGHT_ARROW                    &kp UP_ARROW      &kp LG(SPACE)                &slackstump          &doubletap_mb4        &doubletap_mb5  &none     &kp BACKSPACE
 &kp RIGHT_GUI           &none          &none      &kp LEFT_SHIFT  &MOUSE_LANG2_SHIFT LEFT_CONTROL 0  &lt 1 SPACE       &MOUSE_LANG1_GUI LEFT_GUI 0  &lt 5 KP_ENTER                                                       &none
             >;
 
