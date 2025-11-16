@@ -311,7 +311,7 @@
 
         ARROW {
             bindings = <
-&kp ESCAPE       &kp LC(LS(TAB))         &kp UP_ARROW    &none                    &none                      &none      &none       &kp MINUS     &kp LCTRL    &kp PIPE
+&kp ESCAPE       &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(A)                &none                      &none      &none       &kp MINUS     &kp LCTRL    &kp PIPE
 &kp EXCLAMATION  &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &none      &none  &none      &none       &none         &kp AT_SIGN  &none
 &kp LEFT_SHIFT   &kp LG(LS(LEFT_ARROW))  &none           &kp LG(LS(RIGHT_ARROW))  &none    &none      &none  &kp COMMA  &kp PERIOD  &kp QUESTION  &kp SLASH    &none
 &none            &none                   &none           &none                    &none    &none      &none  &none                                             &none
