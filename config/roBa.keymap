@@ -276,11 +276,11 @@
             label = "SUSUMU_DOUBLECLICK";
         };
 
-        ctrlz_to_layer0: ctrlz_to_layer9 {
+        ctrlz_to_layer0: ctrlz_to_layer0 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LG(Z) &to 0>;
-            label = "CTRLZ_TO_LAYER9";
+            label = "ctrlz_to_layer0";
         };
     };
 
