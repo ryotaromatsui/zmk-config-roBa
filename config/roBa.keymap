@@ -198,18 +198,13 @@
     combos {
         compatible = "zmk,combos";
 
-        tab {
-            bindings = <&kp TAB>;
+        intent {
+            bindings = <&kp LG(LS(N8))>;
             key-positions = <10 11>;
         };
 
-        intent {
-            bindings = <&kp LG(LS(N8))>;
-            key-positions = <10 11 2>;
-        };
-
         toDefaultlayer {
-            bindings = <&slackstump>;
+            bindings = <&mkp MB1>;
             key-positions = <18 19>;
         };
 
@@ -366,10 +361,10 @@
 
         layer_5 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &kp RG(Z)  &kp RG(RS(Z))  &kp UP    &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans     &kp LEFT       &kp DOWN  &kp RIGHT  &kp DELETE
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp RG(Z)  &kp RG(LS(Z))  &trans    &trans     &kp DELETE
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                         &trans
+&trans  &trans  &trans  &trans  &trans                      &kp RG(Z)  &kp RG(RS(Z))  &kp UP         &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans     &kp LEFT       &kp DOWN       &kp RIGHT  &kp DELETE
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans     &kp RG(Z)      &kp RG(LS(Z))  &trans     &kp DELETE
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                              &trans
             >;
         };
 
