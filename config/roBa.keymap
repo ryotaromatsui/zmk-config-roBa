@@ -369,7 +369,7 @@
 
         layer_3 {
             bindings = <
-&kp ESC  &kp F2   &kp RG(X)  &kp RG(V)               &kp RG(C)                                            &kp GRAVE    &kp HASH              &kp LCTRL              &kp DOUBLE_QUOTES  &kp PIPE
+&kp ESC  &kp F2   &kp RG(X)  &kp RG(V)               &kp RG(C)                                            &kp GRAVE    &kp HASH              &kp CARET              &kp DOUBLE_QUOTES  &kp PIPE
 &kp F11  &kp F12  &kp F10    &kp RG(LA(LEFT_ARROW))  &kp RG(LA(RIGHT_ARROW))  &none      &kp EXCLAMATION  &kp ASTRK    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PLUS           &kp COLON
 &none    &none    &none      &kp LC(LEFT_ARROW)      &kp LC(RIGHT_ARROW)      &none      &kp QUESTION     &kp AT_SIGN  &kp LESS_THAN         &kp GREATER_THAN       &kp SLASH          &kp UNDERSCORE
 &none    &none    &none      &none                   &none                    &none      &none            &none                                                                        &to 0
