@@ -301,6 +301,13 @@
             bindings = <&to 0 &kp LEFT_SHIFT>;
             label = "LAYER0_TO_SHIFT";
         };
+
+        slack_sure_nakami: slack_sure_nakami {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&mkp MB2 &kp LC(T)>;
+            label = "SLACK_SURE_NAKAMI";
+        };
     };
 
     keymap {
@@ -341,19 +348,19 @@
 
         layer_3 {
             bindings = <
-&kp ESC  &kp F2   &none    &kp LC(LEFT_ARROW)      &kp LC(RIGHT_ARROW)                                  &kp GRAVE    &kp HASH              &kp LCTRL              &kp DOUBLE_QUOTES  &kp PIPE
-&kp F11  &kp F12  &kp F10  &kp RG(LA(LEFT_ARROW))  &kp RG(LA(RIGHT_ARROW))  &none      &kp EXCLAMATION  &kp ASTRK    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PLUS           &kp COLON
-&none    &none    &none    &kp LC(LEFT_ARROW)      &kp LC(RIGHT_ARROW)      &none      &kp QUESTION     &kp AT_SIGN  &kp LESS_THAN         &kp GREATER_THAN       &kp SLASH          &kp UNDERSCORE
-&none    &none    &none    &none                   &none                    &none      &none            &none                                                                        &to 0
+&kp ESC  &kp F2   &kp RG(X)  &kp RG(V)               &kp RG(C)                                            &kp GRAVE    &kp HASH              &kp LCTRL              &kp DOUBLE_QUOTES  &kp PIPE
+&kp F11  &kp F12  &kp F10    &kp RG(LA(LEFT_ARROW))  &kp RG(LA(RIGHT_ARROW))  &none      &kp EXCLAMATION  &kp ASTRK    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PLUS           &kp COLON
+&none    &none    &none      &kp LC(LEFT_ARROW)      &kp LC(RIGHT_ARROW)      &none      &kp QUESTION     &kp AT_SIGN  &kp LESS_THAN         &kp GREATER_THAN       &kp SLASH          &kp UNDERSCORE
+&none    &none    &none      &none                   &none                    &none      &none            &none                                                                        &to 0
             >;
         };
 
         MOUSE {
             bindings = <
-&screenshot_doubetouch  &none  &kp LG(X)  &kp LG(V)       &kp LG(C)                                                                         &DOUBLECLICK_NEWTAB  &none                 &CTRL_F_K       &none     &p_reload
-&intelliJ               &none  &none      &kp LS(TAB)     &kp TAB                            &to 0             &kp LG(B)                    &slackstump          &hold_mouceto0 MB1 0  &mkp MB3        &mkp MB2  &kp BACKSPACE
-&intelliJ               &none  &none      &kp LEFT_ARROW  &kp RIGHT_ARROW                    &kp UP_ARROW      &kp LG(SPACE)                &kp RG(LS(A))        &doubletap_mb4        &doubletap_mb5  &to 0     &kp BACKSPACE
-&kp RIGHT_GUI           &none  &none      &kp LEFT_SHIFT  &MOUSE_LANG2_SHIFT LEFT_CONTROL 0  &lt 1 SPACE       &MOUSE_LANG1_GUI LEFT_GUI 0  &lt 5 KP_ENTER                                                       &none
+&screenshot_doubetouch  &none  &kp LG(X)  &kp LG(V)       &kp LG(C)                                                                         &slack_sure_nakami  &DOUBLECLICK_NEWTAB   &CTRL_F_K       &none     &p_reload
+&intelliJ               &none  &none      &kp LS(TAB)     &kp TAB                            &to 0             &kp LG(B)                    &slackstump         &hold_mouceto0 MB1 0  &mkp MB3        &mkp MB2  &kp BACKSPACE
+&intelliJ               &none  &none      &kp LEFT_ARROW  &kp RIGHT_ARROW                    &kp UP_ARROW      &kp LG(SPACE)                &kp RG(LS(A))       &doubletap_mb4        &doubletap_mb5  &to 0     &kp BACKSPACE
+&kp RIGHT_GUI           &none  &none      &kp LEFT_SHIFT  &MOUSE_LANG2_SHIFT LEFT_CONTROL 0  &lt 1 SPACE       &MOUSE_LANG1_GUI LEFT_GUI 0  &lt 5 KP_ENTER                                                      &none
             >;
 
             sensor-bindings = <&scroll_up_down>;
