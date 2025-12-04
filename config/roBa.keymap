@@ -357,10 +357,10 @@
 
         MOUSE {
             bindings = <
-&screenshot_doubetouch  &none  &kp LG(X)  &kp LG(V)       &kp LG(C)                                                                         &slack_sure_nakami  &DOUBLECLICK_NEWTAB   &CTRL_F_K       &none     &p_reload
-&intelliJ               &none  &none      &kp LS(TAB)     &kp TAB                            &to 0             &kp LG(B)                    &slackstump         &hold_mouceto0 MB1 0  &mkp MB3        &mkp MB2  &kp BACKSPACE
-&intelliJ               &none  &none      &kp LEFT_ARROW  &kp RIGHT_ARROW                    &kp UP_ARROW      &kp LG(SPACE)                &kp RG(LS(A))       &doubletap_mb4        &doubletap_mb5  &to 0     &kp BACKSPACE
-&kp RIGHT_GUI           &none  &none      &kp LEFT_SHIFT  &MOUSE_LANG2_SHIFT LEFT_CONTROL 0  &lt 1 SPACE       &MOUSE_LANG1_GUI LEFT_GUI 0  &lt 5 KP_ENTER                                                      &none
+&screenshot_doubetouch  &none  &none  &none           &none                                                                             &slack_sure_nakami  &DOUBLECLICK_NEWTAB   &CTRL_F_K       &none     &p_reload
+&intelliJ               &none  &none  &kp LS(TAB)     &kp TAB                            &to 0             &kp LG(B)                    &slackstump         &hold_mouceto0 MB1 0  &mkp MB3        &mkp MB2  &kp BACKSPACE
+&intelliJ               &none  &none  &kp LEFT_ARROW  &kp RIGHT_ARROW                    &kp UP_ARROW      &kp LG(SPACE)                &kp RG(LS(A))       &doubletap_mb4        &doubletap_mb5  &to 0     &kp BACKSPACE
+&kp RIGHT_GUI           &none  &none  &kp LEFT_SHIFT  &MOUSE_LANG2_SHIFT LEFT_CONTROL 0  &lt 1 SPACE       &MOUSE_LANG1_GUI LEFT_GUI 0  &lt 5 KP_ENTER                                                      &none
             >;
 
             sensor-bindings = <&scroll_up_down>;
