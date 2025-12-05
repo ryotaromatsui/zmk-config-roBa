@@ -352,6 +352,20 @@
             bindings = <&kp LANGUAGE_2 &kp SPACE>;
             label = "ALFABET_SPACE";
         };
+
+        one: one {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_2 &kp NUMBER_1>;
+            label = "ONE";
+        };
+
+        two: two {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_2 &kp NUMBER_2>;
+            label = "TWO";
+        };
     };
 
     keymap {
@@ -359,10 +373,10 @@
 
         default_layer {
             bindings = <
-&kp Q         &kp W       &kp E         &kp R                     &kp T                                                               &kp P            &kp Y  &kp U  &kp I   &kp O
-&kp A         &kp S       &kp D         &kp F                     &kp G             &to 0                    &Haihun_Bikkuri          &Haihun_Bikkuri  &kp H  &kp J  &kp K   &kp BACKSPACE
-&kp Z         &kp X       &kp C         &kp V                     &kp B             &kp PERIOD               &Connma_Question         &kp L            &kp N  &kp M  &kp AT  &kp BACKSPACE
-&kp LEFT_WIN  &kp LSHIFT  &kp LEFT_ALT  &mt LEFT_SHIFT LS(ENTER)  &lt 4 LANGUAGE_2  &alfabet_numkey 0 0      &mt LEFT_GUI LANGUAGE_1  &lt 5 KP_ENTER                         &to 0
+&kp Q         &kp W       &kp E         &kp R                     &kp T                                                       &kp P            &kp Y  &kp U  &kp I   &kp O
+&kp A         &kp S       &kp D         &kp F                     &kp G             &to 0            &Haihun_Bikkuri          &Haihun_Bikkuri  &kp H  &kp J  &kp K   &kp BACKSPACE
+&kp Z         &kp X       &kp C         &kp V                     &kp B             &kp PERIOD       &Connma_Question         &kp L            &kp N  &kp M  &kp AT  &kp BACKSPACE
+&kp LEFT_WIN  &kp LSHIFT  &kp LEFT_ALT  &mt LEFT_SHIFT LS(ENTER)  &lt 4 LANGUAGE_2  &lt 1 SPACE      &mt LEFT_GUI LANGUAGE_1  &lt 5 KP_ENTER                         &to 0
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -370,7 +384,7 @@
 
         NUM {
             bindings = <
-&kp MINUS                   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                                 &kp COLON  &kp N1  &kp N2  &kp N3  &kp N0
+&kp MINUS                   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                                 &kp COLON  &one    &two    &kp N3  &kp N0
 &kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))      &kp PERIOD    &kp DOT    &kp N4  &kp N5  &kp N6  &kp N0
 &mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp PERIOD                   &kp QUESTION  &kp DOT    &kp N7  &kp N8  &kp N9  &kp N0
 &none                       &none            &none            &none            &none         &none                        &none         &none                              &none
