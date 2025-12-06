@@ -539,8 +539,8 @@
         NUM {
             bindings = <
 &kp MINUS                   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                                 &kp COLON  &one    &two    &three  &zero
-&kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))      &kp PERIOD    &kp DOT    &four   &five   &six    &zero
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp PERIOD                   &kp QUESTION  &kp DOT    &seven  &eight  &nine   &zero
+&kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))      &kp PERIOD    &kp DOT    &four   &five   &six    &kp BACKSPACE
+&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp PERIOD                   &kp QUESTION  &kp DOT    &seven  &eight  &nine   &kp BACKSPACE
 &none                       &none            &none            &none            &none         &none                        &none         &none                              &none
             >;
 
