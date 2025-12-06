@@ -132,7 +132,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "HAIHUN_BIKKURI";
             #binding-cells = <0>;
-            bindings = <&kp MINUS>, <&kp EXCLAMATION>;
+            bindings = <&haihun>, <&kp EXCLAMATION>;
         };
 
         Connma_Question: Connma_Question {
@@ -366,6 +366,69 @@
             bindings = <&kp LANGUAGE_2 &kp NUMBER_2>;
             label = "TWO";
         };
+
+        haihun: haihun {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_2 &kp MINUS>;
+            label = "HAIHUN";
+        };
+
+        three: three {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_2 &kp NUMBER_3>;
+            label = "THREE";
+        };
+
+        four: four {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_2 &kp NUMBER_4>;
+            label = "FOUR";
+        };
+
+        five: five {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_2 &kp N5>;
+            label = "FIVE";
+        };
+
+        six: six {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_2 &kp NUMBER_6>;
+            label = "SIX";
+        };
+
+        seven: seven {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_2 &kp NUMBER_7>;
+            label = "SEVEN";
+        };
+
+        eight: eight {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_2 &kp NUMBER_8>;
+            label = "EIGHT";
+        };
+
+        nine: nine {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_2 &kp NUMBER_9>;
+            label = "NINE";
+        };
+
+        zero: zero {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_2 &kp NUMBER_0>;
+            label = "ZERO";
+        };
     };
 
     keymap {
@@ -384,9 +447,9 @@
 
         NUM {
             bindings = <
-&kp MINUS                   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                                 &kp COLON  &one    &two    &kp N3  &kp N0
-&kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))      &kp PERIOD    &kp DOT    &kp N4  &kp N5  &kp N6  &kp N0
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp PERIOD                   &kp QUESTION  &kp DOT    &kp N7  &kp N8  &kp N9  &kp N0
+&kp MINUS                   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                                 &kp COLON  &one    &two    &three  &zero
+&kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))      &kp PERIOD    &kp DOT    &four   &five   &six    &zero
+&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp PERIOD                   &kp QUESTION  &kp DOT    &seven  &eight  &nine   &zero
 &none                       &none            &none            &none            &none         &none                        &none         &none                              &none
             >;
 
