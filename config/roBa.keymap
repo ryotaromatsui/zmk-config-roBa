@@ -429,6 +429,97 @@
             bindings = <&kp LANGUAGE_2 &kp NUMBER_0>;
             label = "ZERO";
         };
+
+        backquate: backquate {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_2 &kp GRAVE>;
+            label = "BACKQUATE";
+        };
+
+        syapu: syapu {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_2 &kp HASH>;
+            label = "SYAPU";
+        };
+
+        equal: equal {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_2 &kp EQUAL>;
+            label = "EQUAL";
+        };
+
+        astarisk: astarisk {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_2 &kp ASTERISK>;
+            label = "ASTARISK";
+        };
+
+        slash: slash {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_2 &kp SLASH>;
+            label = "SLASH";
+        };
+
+        ue: ue {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_2 &kp CARET>;
+            label = "UE";
+        };
+
+        dainari: dainari {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_2 &kp LESS_THAN>;
+            label = "DAINARI";
+        };
+
+        syounari: syounari {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_2 &kp GREATER_THAN>;
+            label = "SYOUNARI";
+        };
+
+        coron: coron {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_2 &kp COLON>;
+            label = "CORON";
+        };
+
+        semicoron: semicoron {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_2 &kp SEMICOLON>;
+            label = "SEMICORON";
+        };
+
+        underbar: underbar {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_2 &kp UNDERSCORE>;
+            label = "UNDERBAR";
+        };
+
+        plus: plus {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_2 &kp PLUS>;
+            label = "PLUS";
+        };
+
+        doublequate: doublequate {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_2 &kp DOUBLE_QUOTES>;
+            label = "DOUBLEQUATE";
+        };
     };
 
     keymap {
@@ -469,10 +560,10 @@
 
         layer_3 {
             bindings = <
-&kp ESC  &kp F2   &kp RG(X)  &kp RG(V)               &kp RG(C)                                      &kp GRAVE  &kp HASH              &kp CARET              &kp DOUBLE_QUOTES  &kp SEMICOLON
-&kp F11  &kp F12  &kp F10    &kp RG(LA(LEFT_ARROW))  &kp RG(LA(RIGHT_ARROW))  &none      &kp EQUAL  &kp ASTRK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PLUS           &kp COLON
-&none    &none    &none      &kp LC(LEFT_ARROW)      &kp LC(RIGHT_ARROW)      &none      &kp LBKT   &kp RBKT   &kp LESS_THAN         &kp GREATER_THAN       &kp SLASH          &kp UNDERSCORE
-&none    &none    &none      &none                   &none                    &none      &none      &none                                                                      &to 0
+&kp ESC  &kp F2   &kp RG(X)  &kp RG(V)               &kp RG(C)                                     &backquate  &syapu                &ue                    &doublequate  &semicoron
+&kp F11  &kp F12  &kp F10    &kp RG(LA(LEFT_ARROW))  &kp RG(LA(RIGHT_ARROW))  &none      &equal    &astarisk   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &plus         &coron
+&none    &none    &none      &kp LC(LEFT_ARROW)      &kp LC(RIGHT_ARROW)      &none      &kp LBKT  &kp RBKT    &dainari              &syounari              &kp SLASH     &underbar
+&none    &none    &none      &none                   &none                    &none      &none     &none                                                                  &to 0
             >;
         };
 
