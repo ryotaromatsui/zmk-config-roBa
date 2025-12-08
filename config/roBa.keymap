@@ -132,7 +132,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "HAIHUN_BIKKURI";
             #binding-cells = <0>;
-            bindings = <&haihun>, <&kp EXCLAMATION>;
+            bindings = <&kp MINUS>, <&kp EXCLAMATION>;
         };
 
         Connma_Question: Connma_Question {
