@@ -539,8 +539,6 @@
 &kp Z         &kp X       &kp C         &kp V                     &kp B             &kp PERIOD       &Connma_Question         &kp L            &kp N  &kp M  &kp AT  &kp BACKSPACE
 &kp LEFT_WIN  &kp LSHIFT  &kp LEFT_ALT  &mt LEFT_SHIFT LS(ENTER)  &lt 3 LANGUAGE_2  &lt 1 SPACE      &mt LEFT_GUI LANGUAGE_1  &lt 5 KP_ENTER                         &to 0
             >;
-
-            sensor-bindings = <&scroll_up_down>;
         };
 
         NUM {
@@ -550,8 +548,6 @@
 &mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp PERIOD      &kp QUESTION  &kp DOT    &seven  &eight  &nine   &kp BACKSPACE
 &none                       &none            &none            &none            &none         &none           &none         &none                              &none
             >;
-
-            sensor-bindings = <&scroll_up_down>;
         };
 
         ARROW {
@@ -561,8 +557,6 @@
 &kp LEFT_SHIFT   &kp LG(LS(LEFT_ARROW))  &none           &kp LG(LS(RIGHT_ARROW))  &none    &none      &none  &kp COMMA  &kp PERIOD  &kp QUESTION  &kp SLASH    &none
 &none            &none                   &none           &none                    &none    &none      &none  &none                                             &none
             >;
-
-            sensor-bindings = <&scroll_up_down>;
         };
 
         layer_3 {
@@ -581,8 +575,6 @@
 &intelliJ               &none  &none                &kp LEFT_ARROW         &kp RIGHT_ARROW                    &kp UP_ARROW      &kp LG(SPACE)                &kp RG(LS(A))       &doubletap_mb4        &doubletap_mb5  &to 0     &kp BACKSPACE
 &kp RIGHT_GUI           &none  &none                &kp LEFT_SHIFT         &MOUSE_LANG2_SHIFT LEFT_CONTROL 0  &lt 1 SPACE       &MOUSE_LANG1_GUI LEFT_GUI 0  &lt 5 KP_ENTER                                                      &none
             >;
-
-            sensor-bindings = <&scroll_up_down>;
         };
 
         layer_5 {
@@ -597,7 +589,7 @@
         layer_6 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&kp A   &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
