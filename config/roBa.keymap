@@ -7,6 +7,7 @@
 &trackball {
     automouse-layer = <4>;
     scroll-layers = <6>;
+    y-invert;
 
     arrows {
         layers = <5>;
