@@ -8,7 +8,6 @@
 &trackball {
     automouse-layer = <4>;
     scroll-layers = <6>;
-    scroll-processors = <&zip_scroll_scaler 1 -1>;
 
     arrows {
         layers = <5>;
@@ -25,15 +24,6 @@
 };
 
 / {
-        input_processors {
-        zip_scroll_scaler: zip_scroll_scaler {
-            compatible = "zmk,input-processor-scaler";
-            #input-processor-cells = <2>;
-            type = <INPUT_EV_REL>;
-            codes = <INPUT_REL_WHEEL INPUT_REL_HWHEEL>;
-            track-remainders;
-        };
-
     behaviors {
         // 新しいスクロール動作の追加
 
