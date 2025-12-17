@@ -256,7 +256,7 @@
         };
 
         todefaultlayer0 {
-            bindings = <&to 0>;
+            bindings = <&to 1>;
             key-positions = <13 14>;
         };
 
@@ -270,49 +270,49 @@
         slackstump: slackstump {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 0 &mkp MB2 &kp R &kp LANGUAGE_2 &to 0>;
+            bindings = <&to 1 &mkp MB2 &kp R &kp LANGUAGE_2 &to 1>;
             label = "SLACKSTUMP";
         };
 
         mouceto0: mouceto0 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 0 &mkp MB1 &kp LANGUAGE_1 &to 0>;
+            bindings = <&to 1 &mkp MB1 &kp LANGUAGE_1 &to 1>;
             label = "MOUCETO0";
         };
 
         newtab_to_layer0: newtab_to_layer0 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 0 &kp LG(T) &kp LANGUAGE_1>;
+            bindings = <&to 1 &kp LG(T) &kp LANGUAGE_1>;
             label = "NEWTAB_TO_LAYER0";
         };
 
         find_to_layer0: find_to_layer0 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 0 &kp LG(F) &kp LANGUAGE_1>;
+            bindings = <&to 1 &kp LG(F) &kp LANGUAGE_1>;
             label = "FIND_TO_LAYER0";
         };
 
         LANG1_to_Layer0: LANG1_to_layer0 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 0 &kp LANGUAGE_1>;
+            bindings = <&to 1 &kp LANGUAGE_1>;
             label = "LANG1_TO_LAYER0";
         };
 
         LANG2_to_Layer0: LANG2_to_Layer0 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 0 &kp LANGUAGE_2>;
+            bindings = <&to 1 &kp LANGUAGE_2>;
             label = "LANG2_TO_LAYER0";
         };
 
         findK_to_layer0: findK_to_layer0 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 0 &kp RG(K) &kp LANGUAGE_2>;
+            bindings = <&to 1 &kp RG(K) &kp LANGUAGE_2>;
             label = "FINDK_TO_LAYER0";
         };
 
@@ -333,14 +333,14 @@
         ctrlz_to_layer0: ctrlz_to_layer0 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(Z) &to 0>;
+            bindings = <&kp LG(Z) &to 1>;
             label = "ctrlz_to_layer0";
         };
 
         layer0_to_shift: layer0_to_shift {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 0 &kp LEFT_SHIFT>;
+            bindings = <&to 1 &kp LEFT_SHIFT>;
             label = "LAYER0_TO_SHIFT";
         };
 
@@ -354,7 +354,7 @@
         alfabet_layer1: alfabet_layer1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LANGUAGE_2 &to 1>;
+            bindings = <&kp LANGUAGE_2 &to 2>;
             label = "ALFABET_LAYER1";
         };
 
@@ -542,7 +542,7 @@
 &kp Q  &kp W  &kp E         &r_doubletap_paste        &kp T                                                       &kp P            &kp Y  &kp U  &kp I   &kp O
 &kp A  &kp S  &kp D         &kp F                     &kp G             &mo 6            &Haihun_Bikkuri          &Haihun_Bikkuri  &kp H  &kp J  &kp K   &kp BACKSPACE
 &kp Z  &kp X  &kp C         &kp V                     &kp B             &kp PERIOD       &Connma_Question         &kp L            &kp N  &kp M  &kp AT  &kp BACKSPACE
-&none  &none  &kp LEFT_GUI  &mt LEFT_SHIFT LS(ENTER)  &lt 3 LANGUAGE_2  &lt 1 SPACE      &mt LEFT_GUI LANGUAGE_1  &lt 5 KP_ENTER                         &to 0
+&none  &none  &kp LEFT_GUI  &mt LEFT_SHIFT LS(ENTER)  &lt 3 LANGUAGE_2  &lt 2 SPACE      &mt LEFT_GUI LANGUAGE_1  &lt 5 KP_ENTER                         &to 1
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -571,16 +571,16 @@
 &kp ESC  &kp F2   &kp RG(X)  &kp RG(V)               &kp RG(C)                                     &backquate  &syapu                &ue                    &doublequate  &semicoron
 &kp F11  &kp F12  &kp F10    &kp RG(LA(LEFT_ARROW))  &kp RG(LA(RIGHT_ARROW))  &none      &equal    &astarisk   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &plus         &coron
 &none    &none    &none      &kp LC(LEFT_ARROW)      &kp LC(RIGHT_ARROW)      &none      &kp LBKT  &kp RBKT    &dainari              &syounari              &kp SLASH     &underbar
-&none    &none    &none      &none                   &none                    &none      &none     &none                                                                  &to 0
+&none    &none    &none      &none                   &none                    &none      &none     &none                                                                  &to 1
             >;
         };
 
         MOUSE {
             bindings = <
 &screenshot_doubetouch  &none  &doubletap_kiritori  &doubletap_paste_only  &kp LG(C)                                                                         &slack_sure_nakami  &DOUBLECLICK_NEWTAB   &CTRL_F_K       &none     &p_reload
-&intelliJ               &none  &none                &kp LS(TAB)            &kp TAB                            &mo 6             &slackstump                  &kp RG(B)           &hold_mouceto0 MB1 0  &mkp MB3        &mkp MB2  &slackstump
-&intelliJ               &none  &none                &kp LEFT_ARROW         &kp RIGHT_ARROW                    &kp UP_ARROW      &kp LG(LS(A))                &kp RG(SPACE)       &doubletap_mb4        &doubletap_mb5  &to 0     &kp RG(LS(A))
-&none                   &none  &kp LEFT_GUI         &kp LEFT_SHIFT         &MOUSE_LANG2_SHIFT LEFT_CONTROL 0  &lt 1 SPACE       &MOUSE_LANG1_GUI LEFT_GUI 0  &lt 5 KP_ENTER                                                      &none
+&intelliJ               &none  &none                &kp LS(TAB)            &kp TAB                            &mo 6             &slackstump                  &kp RG(B)           &hold_mouceto0 MB1 0  &mkp MB3        &mkp MB2  &kp BACKSPACE
+&intelliJ               &none  &none                &kp LEFT_ARROW         &kp RIGHT_ARROW                    &kp UP_ARROW      &kp LG(LS(A))                &kp RG(SPACE)       &doubletap_mb4        &doubletap_mb5  &to 1     &kp RG(LS(A))
+&none                   &none  &kp LEFT_GUI         &kp LEFT_SHIFT         &MOUSE_LANG2_SHIFT LEFT_CONTROL 0  &lt 2 SPACE       &MOUSE_LANG1_GUI LEFT_GUI 0  &lt 5 KP_ENTER                                                      &none
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -598,7 +598,7 @@
         layer_6 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans     &trans     &trans     &trans
-&kp A   &trans  &trans  &trans  &trans  &trans      &trans  &trans  &kp RG(C)  &kp RG(V)  &kp RG(X)  &trans
+&kp A   &trans  &trans  &trans  &trans  &trans      &trans  &trans  &kp RG(C)  &kp RG(V)  &kp RG(X)  &slackstump
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans     &trans     &trans     &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                   &trans
             >;
