@@ -264,6 +264,11 @@
             bindings = <&kp LA(ENTER)>;
             key-positions = <28 41>;
         };
+
+        kana {
+            bindings = <&kp LANGUAGE_1>;
+            key-positions = <38 18>;
+        };
     };
 
     macros {
