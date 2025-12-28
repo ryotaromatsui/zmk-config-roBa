@@ -240,6 +240,13 @@
             tapping-term-ms = <100>;
             flavor = "tap-preferred";
         };
+
+        hatena_bikkuri: hatena_bikkuri {
+            compatible = "zmk,behavior-tap-dance";
+            label = "HATENA_BIKKURI";
+            #binding-cells = <0>;
+            bindings = <&kp QUESTION>, <&kp EXCL>;
+        };
     };
 
     combos {
@@ -352,7 +359,7 @@
         slack_sure_nakami: slack_sure_nakami {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&mkp MB2 &kp LC(T)>;
+            bindings = <&mkp MB2 &kp T>;
             label = "SLACK_SURE_NAKAMI";
         };
 
@@ -537,6 +544,13 @@
             bindings = <&kp LANGUAGE_2 &kp DOUBLE_QUOTES>;
             label = "DOUBLEQUATE";
         };
+
+        slack_edit: slack_edit {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&mkp MB2 &kp E>;
+            label = "SLACK_EDIT";
+        };
     };
 
     keymap {
@@ -544,10 +558,10 @@
 
         default_layer {
             bindings = <
-&kp Q  &kp W  &kp E         &r_doubletap_paste        &kp T                                                       &kp P            &kp Y  &kp U  &kp I   &kp O
-&kp A  &kp S  &kp D         &kp F                     &kp G             &mo 6            &Haihun_Bikkuri          &Haihun_Bikkuri  &kp H  &kp J  &kp K   &kp BACKSPACE
-&kp Z  &kp X  &kp C         &kp V                     &kp B             &kp PERIOD       &Connma_Question         &kp L            &kp N  &kp M  &kp AT  &kp BACKSPACE
-&none  &none  &kp LEFT_GUI  &mt LEFT_SHIFT LS(ENTER)  &lt 3 LANGUAGE_2  &lt 1 SPACE      &mt LEFT_GUI LANGUAGE_1  &lt 5 KP_ENTER                         &to 0
+&kp Q  &kp W  &kp E         &r_doubletap_paste        &kp T                                                       &kp P           &kp Y  &kp U  &kp I   &kp O
+&kp A  &kp S  &kp D         &kp F                     &kp G             &mo 6            &hatena_bikkuri          &kp MINUS       &kp H  &kp J  &kp K   &kp BACKSPACE
+&kp Z  &kp X  &kp C         &kp V                     &kp B             &kp PERIOD       &kp COMMA                &kp L           &kp N  &kp M  &kp AT  &kp BACKSPACE
+&none  &none  &kp LEFT_GUI  &mt LEFT_SHIFT LS(ENTER)  &lt 3 LANGUAGE_2  &lt 1 SPACE      &mt LEFT_GUI LANGUAGE_1  &lt 5 KP_ENTER                        &to 0
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -582,10 +596,10 @@
 
         MOUSE {
             bindings = <
-&screenshot_doubetouch  &none  &doubletap_kiritori  &doubletap_paste_only  &kp LG(C)                                                                         &slack_sure_nakami  &DOUBLECLICK_NEWTAB   &CTRL_F_K       &none     &p_reload
-&intelliJ               &none  &none                &kp LS(TAB)            &kp TAB                            &mo 6             &slackstump                  &kp RG(B)           &hold_mouceto0 MB1 0  &mkp MB3        &mkp MB2  &kp BACKSPACE
-&intelliJ               &none  &none                &kp LEFT_ARROW         &kp RIGHT_ARROW                    &kp UP_ARROW      &kp LG(LS(A))                &kp RG(SPACE)       &doubletap_mb4        &doubletap_mb5  &to 0     &kp RG(LS(A))
-&none                   &none  &kp LEFT_GUI         &kp LEFT_SHIFT         &MOUSE_LANG2_SHIFT LEFT_CONTROL 0  &lt 1 SPACE       &MOUSE_LANG1_GUI LEFT_GUI 0  &lt 5 KP_ENTER                                                      &none
+&screenshot_doubetouch  &none  &doubletap_kiritori  &doubletap_paste_only  &kp LG(C)                                                                         &none           &DOUBLECLICK_NEWTAB   &CTRL_F_K       &none     &p_reload
+&intelliJ               &none  &none                &kp LS(TAB)            &kp TAB                            &mo 6             &none                        &kp RG(B)       &hold_mouceto0 MB1 0  &mkp MB3        &mkp MB2  &kp BACKSPACE
+&intelliJ               &none  &none                &kp LEFT_ARROW         &kp RIGHT_ARROW                    &kp UP_ARROW      &kp LG(LS(A))                &kp RG(SPACE)   &doubletap_mb4        &doubletap_mb5  &to 0     &kp RG(LS(A))
+&none                   &none  &kp LEFT_GUI         &kp LEFT_SHIFT         &MOUSE_LANG2_SHIFT LEFT_CONTROL 0  &lt 1 SPACE       &MOUSE_LANG1_GUI LEFT_GUI 0  &lt 5 KP_ENTER                                                  &none
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -602,10 +616,10 @@
 
         layer_6 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans     &trans     &trans     &trans
-&kp A   &trans  &trans  &trans  &trans  &trans      &trans  &trans  &kp RG(C)  &kp RG(V)  &kp RG(X)  &slackstump
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans     &trans     &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                   &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &slack_edit         &trans     &trans     &trans
+&none   &trans  &trans  &trans  &trans  &trans      &trans  &trans  &kp RG(C)           &kp RG(V)  &kp RG(X)  &slackstump
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &slack_sure_nakami  &trans     &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                            &trans
             >;
         };
     };
