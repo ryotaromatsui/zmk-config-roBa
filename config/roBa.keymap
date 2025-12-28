@@ -596,7 +596,7 @@
 
         MOUSE {
             bindings = <
-&screenshot_doubetouch  &none  &doubletap_kiritori  &doubletap_paste_only  &kp LG(C)                                                                         &none           &DOUBLECLICK_NEWTAB   &CTRL_F_K       &none     &p_reload
+&screenshot_doubetouch  &none  &doubletap_kiritori  &doubletap_paste_only  &kp LG(C)                                                                         &none           &DOUBLECLICK_NEWTAB   &none           &none     &p_reload
 &intelliJ               &none  &none                &kp LS(TAB)            &kp TAB                            &mo 6             &none                        &kp RG(B)       &hold_mouceto0 MB1 0  &mkp MB3        &mkp MB2  &kp BACKSPACE
 &intelliJ               &none  &none                &kp LEFT_ARROW         &kp RIGHT_ARROW                    &kp UP_ARROW      &kp LG(LS(A))                &kp RG(SPACE)   &doubletap_mb4        &doubletap_mb5  &to 0     &kp RG(LS(A))
 &none                   &none  &kp LEFT_GUI         &kp LEFT_SHIFT         &MOUSE_LANG2_SHIFT LEFT_CONTROL 0  &lt 1 SPACE       &MOUSE_LANG1_GUI LEFT_GUI 0  &lt 5 KP_ENTER                                                  &none
@@ -616,9 +616,9 @@
 
         layer_6 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &slack_edit         &trans       &trans     &trans
-&none   &trans  &trans  &trans  &trans  &trans      &trans  &trans  &kp RG(C)           &kp RG(X)    &kp RG(V)  &slackstump
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &slack_sure_nakami  &slack_edit  &trans     &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans              &CTRL_F_K  &trans       &trans
+&none   &trans  &trans  &trans  &trans  &trans      &trans  &trans  &kp RG(C)           &kp RG(X)  &kp RG(V)    &slackstump
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &slack_sure_nakami  &trans     &slack_edit  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                              &trans
             >;
         };
