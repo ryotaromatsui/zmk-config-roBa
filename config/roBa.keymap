@@ -247,6 +247,15 @@
             #binding-cells = <0>;
             bindings = <&kp QUESTION>, <&kp EXCL>;
         };
+
+        hannkakuspace_layer: hannkakuspace_layer {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HANNKAKUSPACE_LAYER";
+            bindings = <&mo>, <&space_hankaku>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
     };
 
     combos {
@@ -551,6 +560,13 @@
             bindings = <&mkp MB2 &kp E>;
             label = "SLACK_EDIT";
         };
+
+        space_hankaku: space_hankaku {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_2 &kp SPACE>;
+            label = "SPACE_HANKAKU";
+        };
     };
 
     keymap {
@@ -596,10 +612,10 @@
 
         MOUSE {
             bindings = <
-&screenshot_doubetouch  &none  &doubletap_kiritori  &doubletap_paste_only  &kp LG(C)                                                                         &none           &DOUBLECLICK_NEWTAB   &none           &none     &p_reload
-&intelliJ               &none  &none                &kp LS(TAB)            &kp TAB                            &mo 6             &none                        &kp RG(B)       &hold_mouceto0 MB1 0  &mkp MB3        &mkp MB2  &kp BACKSPACE
-&intelliJ               &none  &none                &kp LEFT_ARROW         &kp RIGHT_ARROW                    &kp UP_ARROW      &kp LG(LS(A))                &kp RG(SPACE)   &doubletap_mb4        &doubletap_mb5  &to 0     &kp RG(LS(A))
-&none                   &none  &kp LEFT_GUI         &kp LEFT_SHIFT         &MOUSE_LANG2_SHIFT LEFT_CONTROL 0  &lt 1 SPACE       &MOUSE_LANG1_GUI LEFT_GUI 0  &lt 5 KP_ENTER                                                  &none
+&screenshot_doubetouch  &trans  &doubletap_kiritori  &doubletap_paste_only  &kp LG(C)                                                                                     &trans          &DOUBLECLICK_NEWTAB   &trans          &trans    &p_reload
+&intelliJ               &trans  &trans               &kp LS(TAB)            &kp TAB                            &mo 6                         &trans                       &kp RG(B)       &hold_mouceto0 MB1 0  &mkp MB3        &mkp MB2  &kp BACKSPACE
+&intelliJ               &trans  &trans               &kp LEFT_ARROW         &kp RIGHT_ARROW                    &kp UP_ARROW                  &kp LG(LS(A))                &kp RG(SPACE)   &doubletap_mb4        &doubletap_mb5  &to 0     &kp RG(LS(A))
+&trans                  &trans  &kp LEFT_GUI         &kp LEFT_SHIFT         &MOUSE_LANG2_SHIFT LEFT_CONTROL 0  &hannkakuspace_layer 1 0      &MOUSE_LANG1_GUI LEFT_GUI 0  &lt 5 KP_ENTER                                                  &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
