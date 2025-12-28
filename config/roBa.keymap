@@ -256,6 +256,16 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
+
+        eisuushift_enter: eisuushift_enter {
+            compatible = "zmk,behavior-hold-tap";
+            label = "EISUUSHIFT_ENTER";
+            bindings = <&eisuu_shift>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "balanced";
+        };
     };
 
     combos {
@@ -567,6 +577,13 @@
             bindings = <&kp LANGUAGE_2 &kp SPACE>;
             label = "SPACE_HANKAKU";
         };
+
+        eisuu_shift: eisuu_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_2 &kp LEFT_SHIFT>;
+            label = "EISUU_SHIFT";
+        };
     };
 
     keymap {
@@ -574,10 +591,10 @@
 
         default_layer {
             bindings = <
-&kp Q  &kp W  &kp E         &kp R                     &kp T                                                       &kp P           &kp Y  &kp U  &kp I   &kp O
-&kp A  &kp S  &kp D         &kp F                     &kp G             &mo 6            &hatena_bikkuri          &kp MINUS       &kp H  &kp J  &kp K   &kp BACKSPACE
-&kp Z  &kp X  &kp C         &kp V                     &kp B             &kp PERIOD       &kp COMMA                &kp L           &kp N  &kp M  &kp AT  &kp BACKSPACE
-&none  &none  &kp LEFT_GUI  &mt LEFT_SHIFT LS(ENTER)  &lt 3 LANGUAGE_2  &lt 1 SPACE      &mt LEFT_GUI LANGUAGE_1  &lt 5 KP_ENTER                        &to 0
+&kp Q  &kp W  &kp E         &kp R                          &kp T                                                       &kp P           &kp Y  &kp U  &kp I   &kp O
+&kp A  &kp S  &kp D         &kp F                          &kp G             &mo 6            &hatena_bikkuri          &kp MINUS       &kp H  &kp J  &kp K   &kp BACKSPACE
+&kp Z  &kp X  &kp C         &kp V                          &kp B             &kp PERIOD       &kp COMMA                &kp L           &kp N  &kp M  &kp AT  &kp BACKSPACE
+&none  &none  &kp LEFT_GUI  &eisuushift_enter 0 LS(ENTER)  &lt 3 LANGUAGE_2  &lt 1 SPACE      &mt LEFT_GUI LANGUAGE_1  &lt 5 KP_ENTER                        &to 0
             >;
 
             sensor-bindings = <&scroll_up_down>;
