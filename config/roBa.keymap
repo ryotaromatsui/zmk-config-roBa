@@ -607,10 +607,10 @@
 
         layer_5 {
             bindings = <
-&trans     &trans  &kp RG(X)  &kp RG(V)  &kp RG(C)                      &kp RG(Z)  &kp RG(RS(Z))  &kp UP         &trans     &trans
-&trans     &trans  &kp LG(X)  &kp LG(V)  &kp RG(C)  &trans      &trans  &trans     &kp LEFT       &kp DOWN       &kp RIGHT  &kp DELETE
-&kp LC(A)  &trans  &trans     &trans     &trans     &trans      &trans  &trans     &kp RG(Z)      &kp RG(LS(Z))  &trans     &kp DELETE
-&trans     &trans  &trans     &trans     &trans     &trans      &trans  &trans                                              &trans
+&trans  &trans  &trans  &trans  &trans                      &kp RG(Z)  &kp RG(RS(Z))  &kp UP         &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans     &kp LEFT       &kp DOWN       &kp RIGHT  &kp DELETE
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans     &kp RG(Z)      &kp RG(LS(Z))  &trans     &kp DELETE
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                              &trans
             >;
         };
 
