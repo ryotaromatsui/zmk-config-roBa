@@ -558,7 +558,7 @@
 
         default_layer {
             bindings = <
-&kp Q  &kp W  &kp E         &r_doubletap_paste        &kp T                                                       &kp P           &kp Y  &kp U  &kp I   &kp O
+&kp Q  &kp W  &kp E         &kp R                     &kp T                                                       &kp P           &kp Y  &kp U  &kp I   &kp O
 &kp A  &kp S  &kp D         &kp F                     &kp G             &mo 6            &hatena_bikkuri          &kp MINUS       &kp H  &kp J  &kp K   &kp BACKSPACE
 &kp Z  &kp X  &kp C         &kp V                     &kp B             &kp PERIOD       &kp COMMA                &kp L           &kp N  &kp M  &kp AT  &kp BACKSPACE
 &none  &none  &kp LEFT_GUI  &mt LEFT_SHIFT LS(ENTER)  &lt 3 LANGUAGE_2  &lt 1 SPACE      &mt LEFT_GUI LANGUAGE_1  &lt 5 KP_ENTER                        &to 0
@@ -616,10 +616,10 @@
 
         layer_6 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &slack_edit         &trans     &trans     &trans
-&none   &trans  &trans  &trans  &trans  &trans      &trans  &trans  &kp RG(C)           &kp RG(V)  &kp RG(X)  &slackstump
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &slack_sure_nakami  &trans     &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                            &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &slack_edit         &trans       &trans     &trans
+&none   &trans  &trans  &trans  &trans  &trans      &trans  &trans  &kp RG(C)           &kp RG(X)    &kp RG(V)  &slackstump
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &slack_sure_nakami  &slack_edit  &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                              &trans
             >;
         };
     };
