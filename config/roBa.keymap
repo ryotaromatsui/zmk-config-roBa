@@ -587,7 +587,7 @@
         space_hankaku: space_hankaku {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LANGUAGE_2 &kp SPACE>;
+            bindings = <&kp LANGUAGE_2 &kp SPACE &kp LANGUAGE_2>;
             label = "SPACE_HANKAKU";
         };
 
