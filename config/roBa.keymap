@@ -267,6 +267,13 @@
             tapping-term-ms = <200>;
             flavor = "balanced";
         };
+
+        doubletap_ctrlK: doubletap_ctrlK {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DOUBLETAP_CTRLK";
+            #binding-cells = <0>;
+            bindings = <&none>, <&kp RG(K)>;
+        };
     };
 
     combos {
@@ -295,6 +302,11 @@
         kana {
             bindings = <&kp LANGUAGE_1>;
             key-positions = <38 18>;
+        };
+
+        doubletap_ctrlK {
+            bindings = <&doubletap_ctrlK>;
+            key-positions = <7>;
         };
     };
 
