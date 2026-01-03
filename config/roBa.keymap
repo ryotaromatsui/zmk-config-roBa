@@ -272,7 +272,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "DOUBLETAP_CTRLK";
             #binding-cells = <0>;
-            bindings = <&none>, <&kp RG(K)>;
+            bindings = <&kp U>, <&kp RG(K)>;
         };
     };
 
