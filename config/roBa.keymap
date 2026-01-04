@@ -303,11 +303,6 @@
             bindings = <&kp LANGUAGE_1>;
             key-positions = <38 18>;
         };
-
-        doubletap_ctrlK {
-            bindings = <&doubletap_ctrlK>;
-            key-positions = <7>;
-        };
     };
 
     macros {
