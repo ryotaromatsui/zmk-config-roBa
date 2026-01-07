@@ -644,10 +644,10 @@
 
         MOUSE {
             bindings = <
-&screenshot_doubetouch  &trans  &doubletap_kiritori  &doubletap_paste_only  &kp LG(C)                                                                         &trans          &DOUBLECLICK_NEWTAB   &doubletap_K_only  &doubletap_F_only  &p_reload
-&intelliJ               &trans  &trans               &kp LS(TAB)            &kp TAB                            &mo 6             &trans                       &kp RG(B)       &hold_mouceto0 MB1 0  &mkp MB3           &mkp MB2           &kp BACKSPACE
-&intelliJ               &trans  &trans               &kp LEFT_ARROW         &kp RIGHT_ARROW                    &kp UP_ARROW      &kp LG(LS(A))                &kp RG(SPACE)   &doubletap_mb4        &doubletap_mb5     &to 0              &kp RG(LS(A))
-&kp LEFT_SHIFT          &trans  &kp LEFT_GUI         &kp LEFT_SHIFT         &MOUSE_LANG2_SHIFT LEFT_CONTROL 0  &lt 1 SPACE       &MOUSE_LANG1_GUI LEFT_GUI 0  &lt 5 KP_ENTER                                                              &kp LEFT_SHIFT
+&screenshot_doubetouch  &trans  &doubletap_kiritori  &doubletap_paste_only  &kp LG(C)                                                                         &trans          &DOUBLECLICK_NEWTAB  &doubletap_K_only  &doubletap_F_only  &p_reload
+&intelliJ               &trans  &trans               &kp LS(TAB)            &kp TAB                            &mo 6             &trans                       &kp RG(B)       &none                &none              &none              &kp BACKSPACE
+&intelliJ               &trans  &trans               &kp LEFT_ARROW         &kp RIGHT_ARROW                    &kp UP_ARROW      &kp LG(LS(A))                &kp RG(SPACE)   &doubletap_mb4       &doubletap_mb5     &to 0              &kp RG(LS(A))
+&kp LEFT_SHIFT          &trans  &kp LEFT_GUI         &kp LEFT_SHIFT         &MOUSE_LANG2_SHIFT LEFT_CONTROL 0  &lt 1 SPACE       &MOUSE_LANG1_GUI LEFT_GUI 0  &lt 5 KP_ENTER                                                             &kp LEFT_SHIFT
             >;
 
             sensor-bindings = <&scroll_up_down>;
