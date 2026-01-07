@@ -296,8 +296,8 @@
             key-positions = <18 19>;
         };
 
-        todefaultlayer0 {
-            bindings = <&to 0>;
+        tab {
+            bindings = <&kp TAB>;
             key-positions = <13 14>;
         };
 
