@@ -635,10 +635,10 @@
 
         layer_3 {
             bindings = <
-&kp ESC  &kp F2   &kp RG(X)  &kp RG(V)               &kp RG(C)                                     &backquate  &syapu                &ue                    &doublequate  &semicoron
-&kp F11  &kp F12  &kp F10    &kp RG(LA(LEFT_ARROW))  &kp RG(LA(RIGHT_ARROW))  &none      &equal    &astarisk   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &plus         &coron
-&none    &none    &none      &kp LC(LEFT_ARROW)      &kp LC(RIGHT_ARROW)      &none      &kp LBKT  &kp RBKT    &dainari              &syounari              &slash        &underbar
-&none    &none    &none      &none                   &none                    &none      &none     &none                                                                  &to 0
+&kp ESC  &kp F2   &kp RG(X)  &kp RG(V)               &kp RG(C)                                         &backquate  &syapu                &ue                    &equal  &semicoron
+&kp F11  &kp F12  &kp F10    &kp RG(LA(LEFT_ARROW))  &kp RG(LA(RIGHT_ARROW))  &none      &doublequate  &astarisk   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &plus   &coron
+&none    &none    &none      &kp LC(LEFT_ARROW)      &kp LC(RIGHT_ARROW)      &none      &kp LBKT      &kp RBKT    &dainari              &syounari              &slash  &underbar
+&none    &none    &none      &none                   &none                    &none      &none         &none                                                            &to 0
             >;
         };
 
