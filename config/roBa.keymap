@@ -645,8 +645,8 @@
 
         NUM {
             bindings = <
-&kp MINUS                   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                    &kp COLON  &one    &two    &three  &zero
-&kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &mo 6           &kp PERIOD    &kp DOT    &four   &five   &six    &kp BACKSPACE
+&kp MINUS                   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                    &kp DOT    &one    &two    &three  &zero
+&kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &mo 6           &kp PERIOD    &kp COLON  &four   &five   &six    &kp BACKSPACE
 &mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp PERIOD      &kp QUESTION  &kp DOT    &seven  &eight  &nine   &kp BACKSPACE
 &none                       &none            &none            &none            &none         &none           &none         &none                              &none
             >;
@@ -663,10 +663,10 @@
 
         layer_3 {
             bindings = <
-&one   &two    &three  &four               &five                                              &backquate  &syapu                &ue                    &equal  &pipe
-&six   &seven  &eight  &nine               &zero          &childa               &doublequate  &astarisk   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &plus   &coron
-&none  &none   &none   &kp LC(LEFT_ARROW)  &kp LC(RIGHT)  &slash_backslash      &kp LBKT      &kp RBKT    &dainari              &syounari              &slash  &underbar
-&none  &none   &none   &none               &none          &none                 &none         &none                                                            &to 0
+&none  &zero          &three  &two    &one                                        &backquate  &syapu                &ue                    &equal  &pipe
+&none  &kp LC(COLON)  &six    &five   &four   &childa               &doublequate  &astarisk   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &plus   &coron
+&none  &kp DOT        &nine   &eight  &seven  &slash_backslash      &kp LBKT      &kp RBKT    &dainari              &syounari              &slash  &underbar
+&none  &none          &none   &none   &none   &none                 &none         &none                                                            &to 0
             >;
         };
 
