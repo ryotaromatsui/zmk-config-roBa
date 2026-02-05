@@ -281,6 +281,13 @@
             #binding-cells = <0>;
             bindings = <&none>, <&kp RG(F)>;
         };
+
+        slash_backslash: slash_backslash {
+            compatible = "zmk,behavior-tap-dance";
+            label = "SLASH_BACKSLASH";
+            #binding-cells = <0>;
+            bindings = <&slash>, <&backslash>;
+        };
     };
 
     combos {
@@ -613,6 +620,13 @@
             bindings = <&kp LANGUAGE_2 &kp PIPE>;
             label = "PIPE";
         };
+
+        backslash: backslash {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_2 &kp BACKSLASH>;
+            label = "BACKSLASH";
+        };
     };
 
     keymap {
@@ -649,10 +663,10 @@
 
         layer_3 {
             bindings = <
-&one   &two    &three  &four               &five                                           &backquate  &syapu                &ue                    &equal  &pipe
-&six   &seven  &eight  &nine               &zero                &childa      &doublequate  &astarisk   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &plus   &coron
-&none  &none   &none   &kp LC(LEFT_ARROW)  &kp LC(RIGHT_ARROW)  &slash       &kp LBKT      &kp RBKT    &dainari              &syounari              &slash  &underbar
-&none  &none   &none   &none               &none                &none        &none         &none                                                            &to 0
+&one   &two    &three  &four               &five                                              &backquate  &syapu                &ue                    &equal  &pipe
+&six   &seven  &eight  &nine               &zero          &childa               &doublequate  &astarisk   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &plus   &coron
+&none  &none   &none   &kp LC(LEFT_ARROW)  &kp LC(RIGHT)  &slash_backslash      &kp LBKT      &kp RBKT    &dainari              &syounari              &slash  &underbar
+&none  &none   &none   &none               &none          &none                 &none         &none                                                            &to 0
             >;
         };
 
