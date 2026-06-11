@@ -779,7 +779,7 @@
             bindings = <
 &kp ESCAPE      &trans      &kp C_VOLUME_DOWN  &kp RG(NUMBER_0)  &kp C_VOLUME_UP                          &trans        &kp LS(LEFT)  &kp UP         &kp LS(RIGHT)  &none
 &kp LS(LG(N8))  &trans      &kp LG(MINUS)      &kp LG(NUMBER_0)  &kp LG(PLUS)     &vim_save       &trans  &kp LS(LEFT)  &kp LEFT      &kp DOWN       &kp RIGHT      &kp DELETE
-&kp LANGUAGE_3  &kp LANG4   &trans             &trans            &trans           &vim_quite      &trans  &trans        &kp RG(Z)     &kp RG(LS(Z))  &trans         &kp DELETE
+&kp LANGUAGE_3  &kp LANG4   &kp LC(LG(L))      &trans            &kp LC(LG(R))    &vim_quite      &trans  &trans        &kp RG(Z)     &kp RG(LS(Z))  &trans         &kp DELETE
 &kp LS(LG(T))   &bt BT_CLR  &bt BT_NXT         &trans            &trans           &trans          &trans  &trans                                                    &hoge
             >;
         };
